@@ -6,13 +6,13 @@ namespace TryOut
     {
         static void Main(string[] args)
         {
-            // NumberOne.hello();
-            // NumberTwo.birthday();
-            // NumberThree.CountString("Very Easy");
-            // NumberFour.Censor();
-            // Console.WriteLine(NumberFive.IsOdd(13));
-            // Console.WriteLine(NumberFive.IsEven(12));
-            // Console.WriteLine(NumberSix.Grade(72));
+            NumberOne.hello();
+            NumberTwo.birthday();
+            NumberThree.CountString("Very Easy");
+            NumberFour.Censor();
+            Console.WriteLine(NumberFive.IsOdd(13));
+            Console.WriteLine(NumberFive.IsEven(12));
+            Console.WriteLine(NumberSix.Grade(72));
             Console.WriteLine(NumberSeven.CelciusToFahrenheit(0)); // Output: 32
             Console.WriteLine(NumberSeven.FahrenheitToCelcius(50)); // Output: 10
             Console.WriteLine(NumberSeven.CelciusToKelvin(100)); // Output: 373.15
@@ -20,7 +20,41 @@ namespace TryOut
             Console.WriteLine(NumberSeven.KelvinToFahrenheit(375)); // Output: 215.33
             Console.WriteLine(NumberSeven.FahrenheitToKelvin(12)); // Output: 262.039
             Console.WriteLine(NumberEight.IsLeapYear(2021));
-
+            var jakarta = Tuple.Create("Jakarta", 7);
+            var bali = Tuple.Create("Bali", 8);
+            var london = Tuple.Create("London", 0);
+            var cairo = Tuple.Create("Cairo", 2);
+            var denver = Tuple.Create("Denver", -6);
+            var chicago = Tuple.Create("Chicago", -5);
+            NumberNine.TimezoneDiff(jakarta, london);
+            NumberNine.TimezoneDiff(cairo, chicago);
+            NumberNine.TimezoneDiff(cairo, bali);
+            NumberNine.TimezoneDiff(denver, jakarta);
+            Console.WriteLine(NumberTen.Sum(19,21));
+            Console.WriteLine(NumberTen.Substract(19,21));
+            Console.WriteLine(NumberTen.Multiply(19,21));
+            Console.WriteLine(NumberTen.Divide(19,21));
+            // Different file for number eleven
+            Console.WriteLine(NumberTwelve.uppercase("haiayaayaa"));
+            Console.WriteLine(NumberThirteen.CountWords("this Wordss and you"));
+            Console.WriteLine(NumberFourteen.IsPalindrome("malam"));
+            Console.WriteLine(NumberFourteen.IsPalindrome("tidur"));
+            Console.WriteLine(NumberFourteen.IsPalindrome("ibu ratna antar ubi"));
+            Console.WriteLine(NumberFifteen.Mirror("--vv"));
+            Console.WriteLine(NumberFifteen.Mirror("..ww"));
+            string[] fruits = {"Jeruk", "Apel", "Anggur", "Pepaya", "Pisang", "Kiwi", "Markisa"};
+            Console.WriteLine(NumberSixteen.IndexFinder(fruits, "Pisang"));
+            NumberSeventeen.loop();
+            int[] points = {2, 4, 54, 12, -65, 19, 40, 92, 88, 330, -4, 54};
+            Console.WriteLine(NumberEighteen.FindMax(points));
+            Console.WriteLine(NumberEighteen.FindMin(points));
+            Console.WriteLine(NumberEighteen.FindAverage(points));
+            Console.WriteLine(NumberNineteen.sorted(points));
+            NumberTwenty item = new NumberTwenty();
+            item.name = "Indomie Goreng";
+            item.price = 3500;
+            item.onSale = true;
+            item.print();
         }
     };
 
@@ -145,11 +179,144 @@ namespace TryOut
 
     class NumberNine
     {
-        var jakarta = Tuple.Create("Jakarta", 7);
-        var bali = Tuple.Create("Bali", 8);
-        var london = Tuple.Create("London", 0);
-        var cairo = Tuple.Create("Cairo", 2);
-        var denver = Tuple.Create("Denver", -6);
-        var chicago = Tuple.Create("Chicago", -5);
+        public static void TimezoneDiff(Tuple<string, int> a, Tuple<string, int> b)
+        {
+            int diff = a.Item2 - b.Item2;
+            if (diff >= 0) { Console.WriteLine($"{a.Item1} {diff} hours ahead {b.Item1}"); }
+            else { Console.WriteLine($"{a.Item1} {diff*-1} hours behind {b.Item1}"); }
+        }
+    }
+
+    class NumberTen
+    {
+        public static double Sum(double a, double b) { return a+b; }
+        public static double Substract(double a, double b) { return a-b; }
+        public static double Multiply(double a, double b) { return a*b; }
+        public static double Divide(double a, double b) { return a/b; }
+    }
+
+    class NumberTwelve
+    {
+        public static string uppercase(string hai) { return hai.ToUpper(); }
+    }
+
+    class NumberThirteen
+    {
+        public static int CountWords(string str)
+        {
+            string[] words = str.Split(" ");
+            return words.Length;
+        }
+    }
+
+    class NumberFourteen
+    {
+        public static bool IsPalindrome(string str)
+        {
+            bool trn = true;
+            string str1 = "";
+            for (int i=str.Length-1;i>=0;i--)
+            {
+                str1 += str[i];
+            }
+            for (int i=0;i<str.Length;i++)
+            {
+                if (str[i] != str1[i])
+                {
+                    trn = trn && false;
+                }
+            }
+            return trn;
+        }
+    }
+
+    class NumberFifteen
+    {
+        public static string Mirror(string arg)
+        {
+            string str = arg;
+            for (int i=arg.Length-1;i>=0;i--)
+            {
+                str += arg[i];
+            }
+            return str;
+        }
+    }
+
+    class NumberSixteen
+    {
+        public static int IndexFinder(string[] arr, string str)
+        {
+            return Array.IndexOf(arr, str);
+        }
+    }
+
+    class NumberSeventeen
+    {
+        public static void loop()
+        {
+            for (int i=1;i<=1000;i++)
+            {
+                if (i%100 == 0) { Console.WriteLine($"{i}. Baz"); }
+                else if (i%20 == 0) {Console.WriteLine($"{i}. Bar"); }
+                else if (i%5 == 0) {Console.WriteLine($"{i}. Foo"); }
+                else { Console.WriteLine($"{i}."); }
+            }
+        }
+    }
+
+    class NumberEighteen
+    {
+        public static int FindMax(int[] num)
+        {
+            int k = 0;
+            foreach (int i in num)
+            {
+                if (i>k) { k = i; }
+            }
+            return k;
+        }
+        public static int FindMin(int[] num) 
+        {
+            int k = num[0];
+            foreach (int i in num)
+            {
+                if (i<k) { k = i; }
+            }
+            return k;
+        }
+        public static double FindAverage(int[] num )
+        {
+            double k = 0;
+            foreach (int i in num) { k += i; }
+            return k/Convert.ToDouble(num.Length);
+        }
+    }
+
+    class NumberNineteen
+    {
+        public static int[] sorted(int[] args)
+        {
+            Array.Sort(args);
+            foreach (int i in args)
+            {
+                Console.WriteLine(i);
+            }
+            return args;
+        }
+    }
+
+    class NumberTwenty
+    {
+        public string name;
+        public double price;
+        public bool onSale;
+        
+        public void print()
+        {
+            if (onSale == true) {this.price *= 0.8;}
+            Console.WriteLine($"{this.name} (Rp{this.price})");
+        }
+
     }
 }
