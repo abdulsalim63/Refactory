@@ -49,7 +49,7 @@ namespace TryOut
             Console.WriteLine(NumberEighteen.FindMax(points));
             Console.WriteLine(NumberEighteen.FindMin(points));
             Console.WriteLine(NumberEighteen.FindAverage(points));
-            Console.WriteLine(NumberNineteen.sorted(points));
+            NumberNineteen.sorted(points);
             NumberTwenty item = new NumberTwenty();
             item.name = "Indomie Goreng";
             item.price = 3500;
