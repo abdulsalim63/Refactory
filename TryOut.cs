@@ -295,14 +295,13 @@ namespace TryOut
 
     class NumberNineteen
     {
-        public static int[] sorted(int[] args)
+        public static void sorted(int[] args)
         {
             Array.Sort(args);
             foreach (int i in args)
             {
                 Console.WriteLine(i);
             }
-            return args;
         }
     }
 
