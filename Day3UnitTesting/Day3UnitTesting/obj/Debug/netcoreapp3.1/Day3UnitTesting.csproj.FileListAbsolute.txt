@@ -1,0 +1,11 @@
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting.dll
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/bin/Debug/netcoreapp3.1/Day3UnitTesting.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/Debug/netcoreapp3.1/Day3UnitTesting.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/Debug/netcoreapp3.1/Day3UnitTesting.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/Debug/netcoreapp3.1/Day3UnitTesting.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/Debug/netcoreapp3.1/Day3UnitTesting.dll
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/Debug/netcoreapp3.1/Day3UnitTesting.pdb

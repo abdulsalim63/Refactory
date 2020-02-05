@@ -1,0 +1,16 @@
+﻿using System;
+
+namespace Day3UnitTesting
+{
+    public class _2
+    {
+        public string grading(int grade)
+        {
+            if (grade >= 90) { return "A";  }
+            else if (grade >= 80) { return "B"; }
+            else if (grade >= 70) { return "C"; }
+            else if (grade >= 60) { return "D"; }
+            return "E";
+        }
+    }
+}
