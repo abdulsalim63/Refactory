@@ -1,0 +1,13 @@
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Day4Json.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.csproj.CopyComplete
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/Debug/netcoreapp3.1/Day4Json.pdb
