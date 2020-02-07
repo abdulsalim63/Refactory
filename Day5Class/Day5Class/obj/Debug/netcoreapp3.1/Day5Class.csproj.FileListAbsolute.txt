@@ -1,0 +1,11 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/bin/Debug/netcoreapp3.1/Day5Class.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/obj/Debug/netcoreapp3.1/Day5Class.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/obj/Debug/netcoreapp3.1/Day5Class.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/obj/Debug/netcoreapp3.1/Day5Class.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/obj/Debug/netcoreapp3.1/Day5Class.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day5Class/Day5Class/obj/Debug/netcoreapp3.1/Day5Class.pdb
