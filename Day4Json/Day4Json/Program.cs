@@ -11,24 +11,24 @@ namespace Day4Json
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //var read = File.ReadAllText("/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/#1.json");
-            //var readJson = JsonConvert.DeserializeObject<List<user>>(read);
+            var read = File.ReadAllText("/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/#1.json");
+            var readJson = JsonConvert.DeserializeObject<List<user>>(read);
 
-            //Console.WriteLine("This is the user who doesn't have phone number : [{0}]", string.Join(", ", phoneNumber(readJson)));
-            //Console.WriteLine("This is the user who have articles : [{0}]", string.Join(", ", haveArticles(readJson)));
-            //Console.WriteLine("This is the user who have \"annis\" in their name : [{0}]", string.Join(", ", haveAnnis(readJson)));
-            //Console.WriteLine("This is the user who have articles on year 2020 : [{0}]", string.Join(", ", haveYear2020(readJson)));
-            //Console.WriteLine("This is the user who are born in 1986 : [{0}]", string.Join(", ", born1986(readJson)));
-            //Console.WriteLine("This is the user whose articles contain \"tips\" : [{0}]", string.Join(", ", titleTips(readJson)));
-            //Console.WriteLine("This is the user whose articles published before August 2019 [{0}]", string.Join(", ", publishAugust(readJson)));
+            Console.WriteLine("This is the user who doesn't have phone number : [{0}]", string.Join(", ", phoneNumber(readJson)));
+            Console.WriteLine("This is the user who have articles : [{0}]", string.Join(", ", haveArticles(readJson)));
+            Console.WriteLine("This is the user who have \"annis\" in their name : [{0}]", string.Join(", ", haveAnnis(readJson)));
+            Console.WriteLine("This is the user who have articles on year 2020 : [{0}]", string.Join(", ", haveYear2020(readJson)));
+            Console.WriteLine("This is the user who are born in 1986 : [{0}]", string.Join(", ", born1986(readJson)));
+            Console.WriteLine("This is the user whose articles contain \"tips\" : [{0}]", string.Join(", ", titleTips(readJson)));
+            Console.WriteLine("This is the user whose articles published before August 2019 [{0}]", string.Join(", ", publishAugust(readJson)));
 
 
-            //var read1 = File.ReadAllText("/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/#2.json");
-            //var readJson1 = JsonConvert.DeserializeObject<List<user2>>(read1);
+            var read1 = File.ReadAllText("/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/#2.json");
+            var readJson1 = JsonConvert.DeserializeObject<List<user2>>(read1);
 
-            //Console.WriteLine("This is the user who purchase in February : [{0}]", string.Join(", ", purchase02(readJson1)));
-            //Console.WriteLine("These are all the total price purchase made by Ari : [{0}]", string.Join(", ", ariPurchase(readJson1)));
-            //Console.WriteLine("This is the user who purchase lower than 300000 : [{0}]", string.Join(", ", lower300000(readJson1)));
+            Console.WriteLine("This is the user who purchase in February : [{0}]", string.Join(", ", purchase02(readJson1)));
+            Console.WriteLine("These are all the total price purchase made by Ari : [{0}]", string.Join(", ", ariPurchase(readJson1)));
+            Console.WriteLine("This is the user who purchase lower than 300000 : [{0}]", string.Join(", ", lower300000(readJson1)));
 
 
             var read2 = File.ReadAllText("/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/#3.json");
