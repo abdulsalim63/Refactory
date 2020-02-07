@@ -1,29 +1,10 @@
 ﻿<Properties StartupConfiguration="{3047CBD1-255C-49D4-ABDC-B01619A9A0A8}|Default">
   <MonoDevelop.Ide.ItemProperties.Day4Json PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Day4Json/purchased-at-2020-01-06.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Day4Json/Program.cs">
     <Files>
-      <File FileName="Day4Json/#3Class.cs" Line="10" Column="39" />
-      <File FileName="Day4Json/all-browns.json" Line="1" Column="1" />
-      <File FileName="Day4Json/electronic.json" Line="1" Column="1" />
-      <File FileName="Day4Json/furnitures.json" Line="1" Column="1" />
-      <File FileName="Day4Json/items.json" Line="1" Column="1" />
-      <File FileName="Day4Json/Program.cs" Line="1" Column="1" />
-      <File FileName="Day4Json/purchased-at-2020-01-06.json" Line="1" Column="1" />
+      <File FileName="Day4Json/Program.cs" Line="18" Column="52" />
+      <File FileName="Day4Json/#3Class.cs" Line="10" Column="39" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Day4Json" expanded="True">
-            <Node name="Day4Json" expanded="True">
-              <Node name="purchased-at-2020-01-06.json" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
