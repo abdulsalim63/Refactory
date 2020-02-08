@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using System.Globalization;
 
 namespace Day5Class
 {
@@ -11,31 +12,55 @@ namespace Day5Class
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //Console.WriteLine(Hash.shaMd5("secret"));
-            //Console.WriteLine(Hash.sha1("secret"));
-            //Console.WriteLine(Hash.sha256("secret"));
-            //Console.WriteLine(Hash.sha512("secret"));
+            Console.WriteLine("Hello World!");
+            Console.WriteLine(Hash.shaMd5("secret"));
+            Console.WriteLine(Hash.sha1("secret"));
+            Console.WriteLine(Hash.sha256("secret"));
+            Console.WriteLine(Hash.sha512("secret"));
 
+            //Console.WriteLine(Cipher.Encrypt("Ini Tulisan Rahasia", "gigaming"));
+            //Console.WriteLine(Cipher.Decrypt("Ini Tulisan Rahasia", "gigaming"));
 
+            SimpleLogger trial = new SimpleLogger(); //This is a sample from the internet, it's beyond my knowledge
+            trial.Debug("some text");
 
+            // To use Auth class, first u need to create user because the database is empty
+            Auth gigaming = new Auth();
+            var user = new user
+            {
+                Username = "salim",
+                Password = "gigaming"
+            };
+            Auth.createUser(user.Username, user.Password);
+            Auth.createUser("salimAgain", "different");
 
-            /* To use Auth class, first u need to create user because the database is empty
-             */
+            Auth.login("salim", "gigaming");
+            Auth.validate("salimAgain", "different");
+            Auth.validate("salim_again", "different");
+            Auth.logout();
+            Auth.logout();
+            Auth.login("salimAgain", "different");
+            Auth.user();
+            Auth.id();
+            Console.WriteLine(Auth.check());
+            Console.WriteLine(Auth.guest());
+            Auth.logout();
+            Console.WriteLine(Auth.guest());
+            Auth.lastlogin();
 
-            //Cart cart = new Cart();
-            //cart.addItem(item_id: 1, price: 30000, quantity: 3)
-            //    .addItem(item_id: 2, price: 10000)
-            //    .addItem(item_id: 3, price: 5000, quantity: 2)
-            //    .removeItem(item_id: 2)
-            //    .addItem(item_id: 4, price: 400, quantity: 6)
-            //    .addDiscount("50%");
+            Cart cart = new Cart();
+            cart.addItem(item_id: 1, price: 30000, quantity: 3)
+                .addItem(item_id: 2, price: 10000)
+                .addItem(item_id: 3, price: 5000, quantity: 2)
+                .removeItem(item_id: 2)
+                .addItem(item_id: 4, price: 400, quantity: 6)
+                .addDiscount("50%");
 
-            //Console.WriteLine(cart.totalItems());
-            //Console.WriteLine(cart.totalQuantity());
-            //Console.WriteLine(cart.totalPrice());
-            //cart.showAll();
-            //cart.checkout();
+            Console.WriteLine(cart.totalItems());
+            Console.WriteLine(cart.totalQuantity());
+            Console.WriteLine(cart.totalPrice());
+            cart.showAll();
+            cart.checkout();
         }
     }
 
@@ -53,7 +78,7 @@ namespace Day5Class
             {
                 sb.Append(hash[i].ToString("X2"));
             }
-            return sb.ToString();
+            return sb.ToString().ToLower();
         }
 
         public static string sha1(string s)
@@ -67,7 +92,7 @@ namespace Day5Class
             {
                 sb.Append(hash[i].ToString("X2"));
             }
-            return sb.ToString();
+            return sb.ToString().ToLower();
         }
 
         public static string sha256(string s)
@@ -81,7 +106,7 @@ namespace Day5Class
             {
                 sb.Append(hash[i].ToString("X2"));
             }
-            return sb.ToString();
+            return sb.ToString().ToLower();
         }
 
         public static string sha512(string s)
@@ -95,26 +120,239 @@ namespace Day5Class
             {
                 sb.Append(hash[i].ToString("X2"));
             }
-            return sb.ToString();
+            return sb.ToString().ToLower();
         }
     }
 
-    class Cipher
+    public static class Cipher
     {
-        public static string encrypt(string s1, string s2)
+        // This constant is used to determine the keysize of the encryption algorithm in bits.
+        // We divide this by 8 within the code below to get the equivalent number of bytes.
+        private const int Keysize = 256;
+
+        // This constant determines the number of iterations for the password bytes generation function.
+        private const int DerivationIterations = 1000;
+
+        public static string Encrypt(string plainText, string passPhrase)
         {
-            return "Anyone without password can't read this message";
+            var saltStringBytes = Generate256BitsOfRandomEntropy();
+            var ivStringBytes = Generate256BitsOfRandomEntropy();
+            var plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+            using (var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, DerivationIterations))
+            {
+                var keyBytes = password.GetBytes(Keysize / 8);
+                using (var symmetricKey = new RijndaelManaged())
+                {
+                    symmetricKey.BlockSize = 256;
+                    symmetricKey.Mode = CipherMode.CBC;
+                    symmetricKey.Padding = PaddingMode.PKCS7;
+                    using (var encryptor = symmetricKey.CreateEncryptor(keyBytes, ivStringBytes))
+                    {
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            using (var cryptoStream = new CryptoStream(memoryStream, encryptor, CryptoStreamMode.Write))
+                            {
+                                cryptoStream.Write(plainTextBytes, 0, plainTextBytes.Length);
+                                cryptoStream.FlushFinalBlock();
+                                var cipherTextBytes = saltStringBytes;
+                                cipherTextBytes = cipherTextBytes.Concat(ivStringBytes).ToArray();
+                                cipherTextBytes = cipherTextBytes.Concat(memoryStream.ToArray()).ToArray();
+                                memoryStream.Close();
+                                cryptoStream.Close();
+                                return Convert.ToBase64String(cipherTextBytes);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        public static string decrypt(string s1, string s2)
+        public static string Decrypt(string cipherText, string passPhrase)
         {
-            return "Ini tulisan rahasia";
+            // Get the complete stream of bytes that represent:
+            // [32 bytes of Salt] + [32 bytes of IV] + [n bytes of CipherText]
+            var cipherTextBytesWithSaltAndIv = Convert.FromBase64String(cipherText);
+            // Get the saltbytes by extracting the first 32 bytes from the supplied cipherText bytes.
+            var saltStringBytes = cipherTextBytesWithSaltAndIv.Take(Keysize / 8).ToArray();
+            // Get the IV bytes by extracting the next 32 bytes from the supplied cipherText bytes.
+            var ivStringBytes = cipherTextBytesWithSaltAndIv.Skip(Keysize / 8).Take(Keysize / 8).ToArray();
+            // Get the actual cipher text bytes by removing the first 64 bytes from the cipherText string.
+            var cipherTextBytes = cipherTextBytesWithSaltAndIv.Skip((Keysize / 8) * 2).Take(cipherTextBytesWithSaltAndIv.Length - ((Keysize / 8) * 2)).ToArray();
+
+            using (var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, DerivationIterations))
+            {
+                var keyBytes = password.GetBytes(Keysize / 8);
+                using (var symmetricKey = new RijndaelManaged())
+                {
+                    symmetricKey.BlockSize = 256;
+                    symmetricKey.Mode = CipherMode.CBC;
+                    symmetricKey.Padding = PaddingMode.PKCS7;
+                    using (var decryptor = symmetricKey.CreateDecryptor(keyBytes, ivStringBytes))
+                    {
+                        using (var memoryStream = new MemoryStream(cipherTextBytes))
+                        {
+                            using (var cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read))
+                            {
+                                var plainTextBytes = new byte[cipherTextBytes.Length];
+                                var decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
+                                memoryStream.Close();
+                                cryptoStream.Close();
+                                return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private static byte[] Generate256BitsOfRandomEntropy()
+        {
+            var randomBytes = new byte[32];
+            using (var rngCsp = new RNGCryptoServiceProvider())
+            {
+                rngCsp.GetBytes(randomBytes);
+            }
+            return randomBytes;
         }
     }
 
-    class Log
-    {
 
+    public class SimpleLogger
+    {
+        private const string FILE_EXT = ".log";
+        private readonly string datetimeFormat;
+        private readonly string logFilename;
+
+        /// <summary>
+        /// Initiate an instance of SimpleLogger class constructor.
+        /// If log file does not exist, it will be created automatically.
+        /// </summary>
+        public SimpleLogger()
+        {
+            datetimeFormat = "yyyy-MM-dd HH:mm:ss.fff";
+            logFilename = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + FILE_EXT;
+
+            // Log file header line
+            string logHeader = logFilename + " is created.";
+            if (!System.IO.File.Exists(logFilename))
+            {
+                WriteLine(System.DateTime.Now.ToString(datetimeFormat) + " " + logHeader, false);
+            }
+        }
+
+        /// <summary>
+        /// Log a DEBUG message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Debug(string text)
+        {
+            WriteFormattedLog(LogLevel.DEBUG, text);
+        }
+
+        /// <summary>
+        /// Log an ERROR message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Error(string text)
+        {
+            WriteFormattedLog(LogLevel.ERROR, text);
+        }
+
+        /// <summary>
+        /// Log a FATAL ERROR message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Fatal(string text)
+        {
+            WriteFormattedLog(LogLevel.FATAL, text);
+        }
+
+        /// <summary>
+        /// Log an INFO message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Info(string text)
+        {
+            WriteFormattedLog(LogLevel.INFO, text);
+        }
+
+        /// <summary>
+        /// Log a TRACE message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Trace(string text)
+        {
+            WriteFormattedLog(LogLevel.TRACE, text);
+        }
+
+        /// <summary>
+        /// Log a WARNING message
+        /// </summary>
+        /// <param name="text">Message</param>
+        public void Warning(string text)
+        {
+            WriteFormattedLog(LogLevel.WARNING, text);
+        }
+
+        private void WriteLine(string text, bool append = true)
+        {
+            try
+            {
+                using (System.IO.StreamWriter writer = new System.IO.StreamWriter(logFilename, append, System.Text.Encoding.UTF8))
+                {
+                    if (!string.IsNullOrEmpty(text))
+                    {
+                        writer.WriteLine(text);
+                    }
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        private void WriteFormattedLog(LogLevel level, string text)
+        {
+            string pretext;
+            switch (level)
+            {
+                case LogLevel.TRACE:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [TRACE]   ";
+                    break;
+                case LogLevel.INFO:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [INFO]    ";
+                    break;
+                case LogLevel.DEBUG:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [DEBUG]   ";
+                    break;
+                case LogLevel.WARNING:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [WARNING] ";
+                    break;
+                case LogLevel.ERROR:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [ERROR]   ";
+                    break;
+                case LogLevel.FATAL:
+                    pretext = System.DateTime.Now.ToString(datetimeFormat) + " [FATAL]   ";
+                    break;
+                default:
+                    pretext = "";
+                    break;
+            }
+
+            WriteLine(pretext + text);
+        }
+
+        [System.Flags]
+        private enum LogLevel
+        {
+            TRACE,
+            INFO,
+            DEBUG,
+            WARNING,
+            ERROR,
+            FATAL
+        }
     }
 
     class Auth
@@ -134,47 +372,54 @@ namespace Day5Class
         public static void createUser(string user, string pwd)
         {
             database.Add(new user { Username = user, Password = pwd });
+            Console.WriteLine($"Total user : {database.Count}");
         }
 
         public static void login(string username, string pwd)
         {
-            var user = new user
+            var nonExists = true;
+            foreach (var i in database)
             {
-                Username = username,
-                Password = pwd
-            };
-            if (database.Contains(user) && currentUser == null)
-            {
-                currentUser = user;
-                log.Add(user);
-                Console.WriteLine("Loggin Succesfully");
+                if (i.Username == username && i.Password == pwd)
+                {
+                    currentUser = new user { Username = username, Password = pwd };
+                    log.Add(new user { Username = username, Password = pwd }) ;
+                    nonExists = false;
+                    Console.WriteLine("Loggin Succesfull");
+                    break;
+                }
             }
-            else { Console.WriteLine("Incorrect username or password")};
+            if (nonExists) { Console.WriteLine("Incorrect username or password"); }
         }
 
         public static void validate(string username, string pwd)
         {
-            var user = new user
+            var nonExists = true;
+            foreach (var i in database)
             {
-                Username = username,
-                Password = pwd
-            };
-            if (database.Contains(user))
-            {
-                Console.WriteLine("Verify");
+                if (i.Username == username && i.Password == pwd)
+                {
+                    nonExists = false;
+                    Console.WriteLine("Verify");
+                    break;
+                }
             }
-            else { Console.WriteLine("Not Verify")};
+            if (nonExists) { Console.WriteLine("Not Verified User"); }
         }
 
         public static void logout()
         {
-            currentUser = null;
-            Console.WriteLine("Logout Succesfull");
+            if (currentUser != null)
+            {
+                currentUser = null;
+                Console.WriteLine("Logout Succesfull");
+            }
+            else { Console.WriteLine("No user currently logged in");  }
         }
 
         public static void user()
         {
-            Console.WriteLine($"Current user logged in : {currentUser}");
+            Console.WriteLine($"Current user logged in : {currentUser.Username}");
         }
 
         public static void id()
@@ -205,7 +450,7 @@ namespace Day5Class
 
         public static void lastlogin()
         {
-            Console.WriteLine(log[log.Count - 1]);
+            Console.WriteLine(log[log.Count - 1].Username);
         }
     }
 

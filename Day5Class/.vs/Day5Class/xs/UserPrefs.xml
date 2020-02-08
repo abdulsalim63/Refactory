@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{847DD7E2-EB05-4466-8530-5F2BD1DFB89D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Day5Class/#1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Day5Class/Program.cs">
     <Files>
-      <File FileName="Day5Class/Program.cs" Line="102" Column="17" />
+      <File FileName="Day5Class/Program.cs" Line="22" Column="84" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Day5Class" expanded="True">
             <Node name="Day5Class" expanded="True">
-              <Node name="#1.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
