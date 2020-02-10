@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{151D1366-9469-4E73-BB66-C06313401B63}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week2MondayHttp/Program.cs">
+    <Files>
+      <File FileName="Week2MondayHttp/Program.cs" Line="144" Column="10" />
+      <File FileName="Week2MondayHttp/#2 Class.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Week2MondayHttp" expanded="True">
+            <Node name="Week2MondayHttp" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Week2MondayHttp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/lnavpn8p.njk~" relfile="Week2MondayHttp/lnavpn8p.njk~" line="94" column="1" />
+      <Breakpoint file="/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/lnavpn8p.njk~" relfile="Week2MondayHttp/lnavpn8p.njk~" line="95" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,16 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Week2MondayHttp.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/IronWebScraper.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.csproj.CopyComplete
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/obj/Debug/netcoreapp3.1/Week2MondayHttp.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/HtmlAgilityPack.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll

@@ -8,7 +8,8 @@
         <State name="__root__">
           <Node name="Day5Class" expanded="True">
             <Node name="Day5Class" expanded="True">
-              <Node name="Dependencies" expanded="True" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
