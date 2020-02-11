@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using IronWebScraper;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
@@ -101,8 +100,49 @@ namespace Week2MondayHttp
 
 
             //Console.ReadLine();
-            await Scrapping.GetHtmlAsync();
+            //await Scrapping.GetHtmlAsync();
 
+            // #4 Kompas
+            var kompas = new List<kompas>();
+
+            HtmlAgilityPack.HtmlWeb webKompas = new HtmlAgilityPack.HtmlWeb();
+            HtmlAgilityPack.HtmlDocument docKompas = webKompas.Load("https://www.kompas.com/");
+            foreach (var link in docKompas.DocumentNode.SelectNodes("//a[@class = 'headline__thumb__link']"))
+            {
+                kompas.Add(new kompas { Title = link.InnerText, URL = link.GetAttributeValue("href", string.Empty) });
+            }
+
+            // #5 CGV
+            var CGV = new List<CGV>();
+
+            var webCGV = new HtmlAgilityPack.HtmlWeb();
+            var docCGV = webCGV.Load("https://www.cgv.id/en/");
+            var slides = docCGV.DocumentNode.SelectNodes("//ul[@class='slides']")[0].ChildNodes.ToList().Where(x => x.Name == "li").ToList();
+            foreach (var i in slides)
+            {
+                var nestesdURL = i.ChildNodes.ToList().Where(x => x.Name == "a").ToList()[0].GetAttributeValue("href", string.Empty);
+                var goUrl = webCGV.Load(nestesdURL);
+
+                var movieDetail = goUrl.DocumentNode.SelectNodes("//div[@class='movie-add-info left']").ToList()[0]
+                    .ChildNodes.ToList().Where(x => x.Name == "ul").ToList()[0]
+                    .ChildNodes.ToList().Where(x => x.Name == "li").ToList();
+
+                CGV.Add(new CGV
+                {
+                    Judul = goUrl.DocumentNode.SelectNodes("//div[@class='movie-info-title']").ToList()[0].InnerText,
+                    JenisFilm = movieDetail[3].InnerText.Split(" : ")[1].Split(',').ToList(),
+                    Sutradara = movieDetail[1].InnerText.Split(" : ")[1],
+                    Casts = movieDetail[0].InnerText.Split(" : ")[1].Split(',').ToList(),
+                    Trailer = goUrl.DocumentNode.SelectNodes("//div[@class='trailer-section']").ToList()[0]
+                    .ChildNodes.Where(x => x.Name == "div").ToList()[0]
+                    .ChildNodes.ToList().Where(x => x.Name == "img").ToList()[0]
+                    .GetAttributeValue("src", string.Empty),
+                    Sinopsis = goUrl.DocumentNode.SelectNodes("//div[@class='movie-synopsis right']").ToList()[0].InnerText.Split("\n")[1]
+                }); ; ;
+            }
+
+
+            Console.WriteLine();
         }
     }
 
@@ -139,24 +179,31 @@ namespace Week2MondayHttp
         }
     }
 
-    class Scrapping
-    {
-        public static async Task GetHtmlAsync()
-        {
-            //var url = "https://www.ebay.com/sch/i/html/i.html?LH_AllListings=1&LH_Complete=1&_from=R40&_jpg=200&_nkw=xbox%20one&_sacat=0&rt=nc";
-            var url = "https://www.themoviedb.org/search?query=%23indonesia&language=en-US";
-            //var url = "https://httpbin.org/get";
-            var client = new HttpClient();
-            var html = await client.GetStringAsync(url);
+    //class Scrapping
+    //{
+    //    public static async Task GetHtmlAsync()
+    //    {
+    //        //var url = "https://www.ebay.com/sch/i/html/i.html?LH_AllListings=1&LH_Complete=1&_from=R40&_jpg=200&_nkw=xbox%20one&_sacat=0&rt=nc";
+    //        //var url = "https://www.themoviedb.org/search?query=%23indonesia&language=en-US";
+    //        //var url = "https://httpbin.org/get";
+    //        //var url = "https://www.kompas.com/";
+    //        var url = "https://www.cgv.id/en/movies/now_playing";
+    //        var client = new HttpClient();
+    //        var html = await client.GetStringAsync(url);
+    //        Console.WriteLine(html);
+    //        var htmlDocument = new HtmlDocument();
+    //        htmlDocument.LoadHtml(html);
 
-            var htmlDocument = new HtmlDocument();
-            htmlDocument.LoadHtml(html);
 
-            var ProductList = htmlDocument.DocumentNode.Descendants("div")
-                .Where(node => node.GetAttributeValue("class", "")
-                .Equals("search_result movie")).ToList();
+    //        var headlineHtml = htmlDocument.DocumentNode.Descendants("ul").ToList()[0];
+    //        //.Where(node => node.GetAttributeValue("aria-live", "")
+    //        //.Equals("polite")).ToList();
 
-            Console.WriteLine();
-        }
-    }
+    //        //var headlineList = headlineHtml[0].Descendants("ul")
+    //        //    .Where(node => node.GetAttributeValue("class", "")
+    //        //    .Equals("headline__thumb__row clearfix js-hl-thumb slick-initialized slick-slider")).ToList();
+    //        Console.WriteLine();
+    //    }
+    ////}
+    ///
 }
