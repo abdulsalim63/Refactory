@@ -14,7 +14,7 @@ namespace Week2MondayHttp
     {
         public static async Task Main(string[] args)
         {
-            /*var getJsonResponse = await Fetcher.Get("https://httpbin.org/get");
+            var getJsonResponse = await Fetcher.Get("https://httpbin.org/get");
             Console.WriteLine(getJsonResponse);
             var deleteJsonResponse = await Fetcher.Delete("https://httpbin.org/delete");
             Console.WriteLine(deleteJsonResponse);
@@ -36,7 +36,7 @@ namespace Week2MondayHttp
 
             var jsonPatchContent = new StringContent(jsonData, System.Text.Encoding.UTF8, "patch/json");
             var patchJsonResponse = Fetcher.Patch("https://httpbin.org/patch", jsonPatchContent);
-            Console.WriteLine(patchJsonResponse);*/
+            Console.WriteLine(patchJsonResponse);
 
             var client = new HttpClient();
             var jsonparse = await client.GetStringAsync("https://mul14.github.io/data/employees.json");
@@ -84,7 +84,7 @@ namespace Week2MondayHttp
 
             }
 
-            /*var jsonParse1 = await client.GetStringAsync("https://jsonplaceholder.typicode.com/posts");
+            var jsonParse1 = await client.GetStringAsync("https://jsonplaceholder.typicode.com/posts");
             var jsonParse2 = await client.GetStringAsync("https://jsonplaceholder.typicode.com/users");
             var postsList = JsonConvert.DeserializeObject<List<posts>>(jsonParse1);
             var usersList = JsonConvert.DeserializeObject<List<user>>(jsonParse2);
@@ -95,14 +95,10 @@ namespace Week2MondayHttp
 
                 File.AppendAllText(@"/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/Merge Json #3.json", JsonConvert.SerializeObject(post));
                 File.AppendAllText(@"/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2MondayHttp/Week2MondayHttp/Merge Json #3.json", "\n");
-            }*/
+            }
 
 
-
-            //Console.ReadLine();
-            //await Scrapping.GetHtmlAsync();
-
-            // #4 Kompas
+            // #5 Kompas
             var kompas = new List<kompas>();
 
             HtmlAgilityPack.HtmlWeb webKompas = new HtmlAgilityPack.HtmlWeb();
@@ -112,7 +108,8 @@ namespace Week2MondayHttp
                 kompas.Add(new kompas { Title = link.InnerText, URL = link.GetAttributeValue("href", string.Empty) });
             }
 
-            // #5 CGV
+            
+            // #6 CGV
             var CGV = new List<CGV>();
 
             var webCGV = new HtmlAgilityPack.HtmlWeb();
@@ -179,30 +176,11 @@ namespace Week2MondayHttp
         }
     }
 
-    //class Scrapping
+    //class RestAPI
     //{
-    //    public static async Task GetHtmlAsync()
+    //    public static void GET()
     //    {
-    //        //var url = "https://www.ebay.com/sch/i/html/i.html?LH_AllListings=1&LH_Complete=1&_from=R40&_jpg=200&_nkw=xbox%20one&_sacat=0&rt=nc";
-    //        //var url = "https://www.themoviedb.org/search?query=%23indonesia&language=en-US";
-    //        //var url = "https://httpbin.org/get";
-    //        //var url = "https://www.kompas.com/";
-    //        var url = "https://www.cgv.id/en/movies/now_playing";
-    //        var client = new HttpClient();
-    //        var html = await client.GetStringAsync(url);
-    //        Console.WriteLine(html);
-    //        var htmlDocument = new HtmlDocument();
-    //        htmlDocument.LoadHtml(html);
-
-
-    //        var headlineHtml = htmlDocument.DocumentNode.Descendants("ul").ToList()[0];
-    //        //.Where(node => node.GetAttributeValue("aria-live", "")
-    //        //.Equals("polite")).ToList();
-
-    //        //var headlineList = headlineHtml[0].Descendants("ul")
-    //        //    .Where(node => node.GetAttributeValue("class", "")
-    //        //    .Equals("headline__thumb__row clearfix js-hl-thumb slick-initialized slick-slider")).ToList();
-    //        Console.WriteLine();
+    //        
     //    }
     ////}
     ///
