@@ -1,0 +1,13 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/Week2WednesdayCLI.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/bin/Debug/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2WednesdayCLI/Week2WednesdayCLI/obj/Debug/netcoreapp3.1/Week2WednesdayCLI.csproj.CopyComplete
