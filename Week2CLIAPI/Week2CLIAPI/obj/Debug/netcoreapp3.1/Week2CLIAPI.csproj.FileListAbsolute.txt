@@ -1,0 +1,17 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Week2CLIAPI.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/HtmlAgilityPack.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.csproj.CopyComplete
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/obj/Debug/netcoreapp3.1/Week2CLIAPI.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/RestSharp.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week2CLIAPI/Week2CLIAPI/bin/Debug/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll
