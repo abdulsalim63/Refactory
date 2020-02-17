@@ -17,7 +17,7 @@
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/gigaming/.nuget/NuGet/NuGet.Config"
+          "/Users/gigaming/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -39,13 +39,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "McMaster": {
+            "HtmlAgilityPack": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[1.11.18, )"
             },
             "McMaster.Extensions.CommandLineUtils": {
               "target": "Package",
               "version": "[2.5.1, )"
+            },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[79.0.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
             }
           },
           "imports": [

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Unt/Unt.csproj": {}
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Unt/Unt.csproj": {}
   },
   "projects": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj": {
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
+        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
         "projectName": "Day3UnitTesting",
-        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
+        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
         "packagesPath": "/Users/gigaming/.nuget/packages/",
-        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/",
+        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Unt/Unt.csproj": {
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Unt/Unt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Unt/Unt.csproj",
+        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Unt/Unt.csproj",
         "projectName": "Unt",
-        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Unt/Unt.csproj",
+        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Unt/Unt.csproj",
         "packagesPath": "/Users/gigaming/.nuget/packages/",
-        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Unt/obj/",
+        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Unt/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -81,8 +81,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj": {
-                "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj"
+              "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj": {
+                "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj"
               }
             }
           }

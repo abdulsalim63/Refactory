@@ -12,8 +12,8 @@
     },
     {
       "id": 3,
-      "todo": "get lunch",
-      "done": false
+      "todo": "lunch",
+      "done": true
     }
   ]
 }

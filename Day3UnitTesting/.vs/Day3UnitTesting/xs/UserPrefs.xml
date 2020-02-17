@@ -1,24 +1,21 @@
 ﻿<Properties StartupConfiguration="{B55AC350-7C0F-4D8E-9309-1E81CC191DAE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Unt/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Unt/New.cs">
     <Files>
-      <File FileName="Unt/UnitTest1.cs" Line="151" Column="105" />
+      <File FileName="Unt/UnitTest1.cs" Line="38" Column="40" />
+      <File FileName="Day3UnitTesting/#1.cs" Line="7" Column="9" />
+      <File FileName="Day3UnitTesting/#2.cs" Line="1" Column="1" />
+      <File FileName="Day3UnitTesting/#3.cs" Line="6" Column="30" />
+      <File FileName="Unt/New.cs" Line="19" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Day3UnitTesting" expanded="True">
-            <Node name="Day3UnitTesting" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-            </Node>
+            <Node name="Day3UnitTesting" expanded="True" />
             <Node name="Unt" expanded="True">
-              <Node name="UnitTest1.cs" selected="True" />
+              <Node name="New.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Day3UnitTesting" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

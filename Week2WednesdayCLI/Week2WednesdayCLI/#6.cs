@@ -9,10 +9,13 @@ namespace Week2WednesdayCLI
         [Obsolete]
         static void Main(string[] args)
         {
-            var method = args[0];
+            //var method = args[0];
             var hostName = Dns.GetHostName();
-            var ip = Dns.GetHostByName(hostName).AddressList[0].ToString();
-            Console.WriteLine(ip);
+            var ip = Dns.GetHostByName(hostName);
+            foreach (var i in ip.AddressList)
+            {
+                Console.WriteLine(i.ToString()); // System.Net.Sockets.SocketException (0x80004005): Could not resolve host
+            }
         }
     }
 }

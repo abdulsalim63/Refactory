@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{F2035625-196B-47DC-ABCC-F654D0C90F6D}|Default">
   <MonoDevelop.Ide.ItemProperties.Week2CLIAPI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week2CLIAPI/todoClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week2CLIAPI/Program.cs">
     <Files>
-      <File FileName="Week2CLIAPI/Program.cs" Line="42" Column="66" />
+      <File FileName="Week2CLIAPI/Program.cs" Line="32" Column="10" />
       <File FileName="Week2CLIAPI/todo.json" Line="19" Column="2" />
-      <File FileName="Week2CLIAPI/todoClass.cs" Line="10" Column="1" />
+      <File FileName="Week2CLIAPI/todoClass.cs" Line="8" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week2CLIAPI" expanded="True">
             <Node name="Week2CLIAPI" expanded="True">
-              <Node name="todoClass.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
+      "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
       "projectName": "Day3UnitTesting",
-      "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
+      "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/Day3UnitTesting.csproj",
       "packagesPath": "/Users/gigaming/.nuget/packages/",
-      "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day3UnitTesting/Day3UnitTesting/obj/",
+      "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day3UnitTesting/Day3UnitTesting/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

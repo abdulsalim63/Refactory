@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{332F2618-6133-426A-A19D-E96C44B646DB}|Default">
   <MonoDevelop.Ide.ItemProperties.Week2WednesdayCLI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week2WednesdayCLI/#7.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week2WednesdayCLI/#8.cs">
     <Files>
-      <File FileName="Week2WednesdayCLI/#7.cs" Line="6" Column="18" />
+      <File FileName="Week2WednesdayCLI/#6.cs" Line="1" Column="1" />
+      <File FileName="Week2WednesdayCLI/#8.cs" Line="16" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week2WednesdayCLI" expanded="True">
             <Node name="Week2WednesdayCLI" expanded="True">
-              <Node name="#7.cs" selected="True" />
+              <Node name="#8.cs" selected="True" />
             </Node>
           </Node>
         </State>
