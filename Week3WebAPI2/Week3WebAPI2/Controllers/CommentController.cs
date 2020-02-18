@@ -21,7 +21,8 @@ namespace Week3WebAPI2.Controllers
             _context = context;
             for (int i = 1; i <= 5; i++)
             {
-                _context.CommentItems.Add(new Comment { Id = i, Content = "Boooo", Photo_id = 1, Contact_id = 1 });
+                if (_context.CommentItems.Count() >= 5) { break; }
+                _context.CommentItems.Add(new Comment { Content = "Boooo", Photo_id = 1, Contact_id = 1 });
                 _context.SaveChangesAsync();
             }
         }
