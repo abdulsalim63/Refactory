@@ -23,7 +23,7 @@ namespace Week3WebAPI2.Controllers
             _context = context;
             for (int i=1;i<=5;i++)
             {
-                _context.PhotoItems.Add(new Photo { Caption = $"Round {i}", Url = $"oracle.com/{i}", Contact_id = (i % 2 == 0) ? 1 : 2 });
+                _context.PhotoItems.Add(new Photo { Id = i, Caption = $"Round {i}", Url = $"oracle.com/{i}", Contact_id = (i % 2 == 0) ? 1 : 2 });
                 _context.SaveChangesAsync();
             }
         }

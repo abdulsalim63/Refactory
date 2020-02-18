@@ -21,7 +21,7 @@ namespace Week3WebAPI2.Controllers
             _context = context;
             for (int i = 1; i <= 5; i++)
             {
-                _context.ContactItems.Add(new Contact { Username = $"xx_xx round {i}", Password = "confiedntial", Email = $"first_{i}@hotmail.com", FullName = "nope" });
+                _context.ContactItems.Add(new Contact { Id = i, Username = $"xx_xx round {i}", Password = "confiedntial", Email = $"first_{i}@hotmail.com", FullName = "nope" });
                 _context.SaveChangesAsync();
             }
         }

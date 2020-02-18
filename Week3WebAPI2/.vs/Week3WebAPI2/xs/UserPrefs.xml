@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{6E8A4966-C223-4EB5-95CB-74D1D956A0CB}|Default">
   <MonoDevelop.Ide.ItemProperties.Week3WebAPI2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Controllers/PhotoController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Controllers/CommentController.cs">
     <Files>
-      <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="112" Column="9" />
-      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" />
-      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" />
+      <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="24" Column="13" />
+      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" Line="22" Column="13" />
+      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" Line="24" Column="104" />
       <File FileName="Week3WebAPI2/Startup.cs" />
       <File FileName="Week3WebAPI2/Models/PhotoContext.cs" />
     </Files>
