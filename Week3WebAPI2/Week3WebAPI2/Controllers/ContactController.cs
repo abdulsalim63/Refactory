@@ -19,6 +19,11 @@ namespace Week3WebAPI2.Controllers
         public ContactController(ContactContext context)
         {
             _context = context;
+            for (int i = 1; i <= 5; i++)
+            {
+                _context.ContactItems.Add(new Contact { Username = $"xx_xx round {i}", Password = "confiedntial", Email = $"first_{i}@hotmail.com", FullName = "nope" });
+                _context.SaveChangesAsync();
+            }
         }
 
         // GET: api/Contact
@@ -119,10 +124,6 @@ namespace Week3WebAPI2.Controllers
                     return BadRequest();
                 }
                 value.ApplyTo(result);//result gets the values from the patch request
-                _context.ContactItems.Remove(await _context.ContactItems.FindAsync(id));
-                await _context.SaveChangesAsync();
-
-                _context.ContactItems.Add(result);
                 await _context.SaveChangesAsync();
 
                 return new ObjectResult(result);

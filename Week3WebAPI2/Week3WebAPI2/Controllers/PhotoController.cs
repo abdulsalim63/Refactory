@@ -21,6 +21,11 @@ namespace Week3WebAPI2.Controllers
         public PhotoController(PhotoContext context)
         {
             _context = context;
+            for (int i=1;i<=5;i++)
+            {
+                _context.PhotoItems.Add(new Photo { Caption = $"Round {i}", Url = $"oracle.com/{i}", Contact_id = (i % 2 == 0) ? 1 : 2 });
+                _context.SaveChangesAsync();
+            }
         }
 
         // GET: api/Photo
@@ -120,11 +125,7 @@ namespace Week3WebAPI2.Controllers
                 {
                     return BadRequest();
                 }
-                value.ApplyTo(result);//result gets the values from the patch request
-                _context.PhotoItems.Remove(await _context.PhotoItems.FindAsync(id));
-                await _context.SaveChangesAsync();
-
-                _context.PhotoItems.Add(result);
+                value.ApplyTo(await _context.PhotoItems.FindAsync(id));//result gets the values from the patch request
                 await _context.SaveChangesAsync();
 
                 return new ObjectResult(result);

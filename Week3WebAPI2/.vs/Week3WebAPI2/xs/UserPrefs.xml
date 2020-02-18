@@ -3,10 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Controllers/PhotoController.cs">
     <Files>
       <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="112" Column="9" />
-      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" Line="125" Column="38" />
-      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" Line="111" Column="91" />
-      <File FileName="Week3WebAPI2/Startup.cs" Line="43" Column="39" />
-      <File FileName="Week3WebAPI2/Models/PhotoContext.cs" Line="1" Column="1" />
+      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" />
+      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" />
+      <File FileName="Week3WebAPI2/Startup.cs" />
+      <File FileName="Week3WebAPI2/Models/PhotoContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

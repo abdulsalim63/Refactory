@@ -19,6 +19,11 @@ namespace Week3WebAPI2.Controllers
         public CommentController(CommentContext context)
         {
             _context = context;
+            for (int i = 1; i <= 5; i++)
+            {
+                _context.CommentItems.Add(new Comment { Content = "Boooo", Photo_id = 1, Contact_id = 1 });
+                _context.SaveChangesAsync();
+            }
         }
 
         // GET: api/Comment
@@ -119,11 +124,6 @@ namespace Week3WebAPI2.Controllers
                     return BadRequest();
                 }
                 value.ApplyTo(result);//result gets the values from the patch request
-
-                _context.CommentItems.Remove(await _context.CommentItems.FindAsync(id));
-                await _context.SaveChangesAsync();
-
-                _context.CommentItems.Add(result);
                 await _context.SaveChangesAsync();
 
                 return new ObjectResult(result);
