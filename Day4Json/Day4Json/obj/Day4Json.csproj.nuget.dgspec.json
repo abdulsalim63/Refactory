@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/Day4Json.csproj": {}
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day4Json/Day4Json/Day4Json.csproj": {}
   },
   "projects": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/Day4Json.csproj": {
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day4Json/Day4Json/Day4Json.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/Day4Json.csproj",
+        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day4Json/Day4Json/Day4Json.csproj",
         "projectName": "Day4Json",
-        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/Day4Json.csproj",
+        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day4Json/Day4Json/Day4Json.csproj",
         "packagesPath": "/Users/gigaming/.nuget/packages/",
-        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/TryOut/Day4Json/Day4Json/obj/",
+        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Day4Json/Day4Json/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
