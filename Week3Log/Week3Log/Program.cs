@@ -13,9 +13,9 @@ namespace Week3Log
     public class Program
     {
         public static void Main(string[] args)
-        {
+        { 
+            File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week3Log/Week3Log/app.log", "");
             CreateHostBuilder(args).Build().Run();
-            File.Create("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week3Log/Week3Log/app.log");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
