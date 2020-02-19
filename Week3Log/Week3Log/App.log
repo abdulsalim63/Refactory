@@ -4,6 +4,9 @@ Completed 404 /api/User/6 not found for /api/User/6
 Started PATCH /api/User/6 for localhost:5000
 Completed 404 /api/User/6 not found for /api/User/6
 
+Started DELETE /api/User/6 for localhost:5000
+Completed 404 /api/User/6 not found for /api/User/6
+
 Started DELETE /api/User/8 for localhost:5000
 Completed 404 /api/User/8 not found for /api/User/8
 
