@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{7259EFF0-8BA3-445B-B948-B09AF1F241AD}|Default">
+  <MonoDevelop.Ide.ItemProperties.Week3Log PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week3Log/Models/User.cs">
+    <Files>
+      <File FileName="Week3Log/Middleware/Middleware.cs" Line="23" Column="60" />
+      <File FileName="Week3Log/Controllers/UserController.cs" Line="132" Column="1" />
+      <File FileName="Week3Log/Startup.cs" Line="22" Column="6" />
+      <File FileName="Week3Log/Program.cs" Line="18" Column="120" />
+      <File FileName="Week3Log/app.log" Line="1" Column="1" />
+      <File FileName="Week3Log/Models/UserContext.cs" Line="1" Column="1" />
+      <File FileName="Week3Log/Models/User.cs" Line="14" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Week3Log" expanded="True">
+            <Node name="Week3Log" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middleware" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

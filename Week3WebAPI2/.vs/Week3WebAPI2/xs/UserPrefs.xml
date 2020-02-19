@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.Week3WebAPI2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Controllers/CommentController.cs">
     <Files>
-      <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="24" Column="13" />
-      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" Line="22" Column="13" />
-      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" Line="24" Column="104" />
+      <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="26" Column="17" />
+      <File FileName="Week3WebAPI2/Controllers/ContactController.cs" />
+      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" Line="136" Column="10" />
       <File FileName="Week3WebAPI2/Startup.cs" />
       <File FileName="Week3WebAPI2/Models/PhotoContext.cs" />
     </Files>
@@ -13,10 +13,10 @@
         <State name="__root__">
           <Node name="Week3WebAPI2" expanded="True">
             <Node name="Week3WebAPI2" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="PhotoController.cs" selected="True" />
+                <Node name="CommentController.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

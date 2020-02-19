@@ -1,18 +1,17 @@
 ﻿<Properties StartupConfiguration="{3047CBD1-255C-49D4-ABDC-B01619A9A0A8}|Default">
   <MonoDevelop.Ide.ItemProperties.Day4Json PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Day4Json/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Day4Json/#1.json">
     <Files>
-      <File FileName="Day4Json/Program.cs" Line="16" Column="1" />
+      <File FileName="Day4Json/Program.cs" Line="85" Column="44" />
       <File FileName="Day4Json/#3Class.cs" Line="10" Column="39" NotebookId="1" />
       <File FileName="Day4Json/#1.json" Line="12" Column="7" NotebookId="1" />
-      <File FileName="Day4Json/#1Class.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Day4Json" expanded="True">
             <Node name="Day4Json" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="#1.json" selected="True" />
             </Node>
           </Node>
         </State>
