@@ -29,25 +29,12 @@ namespace Week3DI
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = new NpgsqlConnection("Host=127.0.0.1;Username=postgres;Password=password;Database=ContactDb");
-            connection.Open();
-            var command = connection.CreateCommand();
-            command.CommandText = "INSERT INTO ContactDb (username, password, email, full_name) VALUES (@username, @password, @email, @full_name) RETURNING id";
-            var user = new Contact
-            {
-                Username = "likeABlindManToldDrivingACar",
-                Password = "Confidential",
-                Email = "Confidential",
-                Full_Name = "Also Confidential"
-            };
-            command.Parameters.AddWithValue("@username", user.Username);
-            command.Parameters.AddWithValue("@password", user.Password);
-            command.Parameters.AddWithValue("@email", user.Email);
-            command.Parameters.AddWithValue("@full_name", user.Full_Name);
-            command.Prepare();
-            command.ExecuteScalar();
-            connection.Close();
 
-            services.AddDbContext<ContactContext>(opt => opt.UseNpgsql("ContactDb"));
+            services.AddControllersWithViews().AddNewtonsoftJson();
+
+
+            services.AddSingleton<NpgsqlConnection>(connection);
+            services.AddSingleton<IDatabase, Database>();
 
             services.AddControllers();
         }

@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{6E8A4966-C223-4EB5-95CB-74D1D956A0CB}|Default">
   <MonoDevelop.Ide.ItemProperties.Week3WebAPI2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Controllers/CommentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week3WebAPI2/Startup.cs">
     <Files>
       <File FileName="Week3WebAPI2/Controllers/PhotoController.cs" Line="26" Column="17" />
       <File FileName="Week3WebAPI2/Controllers/ContactController.cs" />
-      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" Line="136" Column="10" />
-      <File FileName="Week3WebAPI2/Startup.cs" />
+      <File FileName="Week3WebAPI2/Controllers/CommentController.cs" />
+      <File FileName="Week3WebAPI2/Startup.cs" Line="40" Column="1" />
       <File FileName="Week3WebAPI2/Models/PhotoContext.cs" />
     </Files>
     <Pads>
@@ -13,10 +13,12 @@
         <State name="__root__">
           <Node name="Week3WebAPI2" expanded="True">
             <Node name="Week3WebAPI2" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="CommentController.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

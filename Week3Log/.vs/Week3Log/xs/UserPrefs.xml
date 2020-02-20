@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{7259EFF0-8BA3-445B-B948-B09AF1F241AD}|Default">
   <MonoDevelop.Ide.ItemProperties.Week3Log PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week3Log/Models/User.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week3Log/App.log">
     <Files>
-      <File FileName="Week3Log/Middleware/Middleware.cs" Line="23" Column="60" />
-      <File FileName="Week3Log/Controllers/UserController.cs" Line="132" Column="1" />
-      <File FileName="Week3Log/Startup.cs" Line="22" Column="6" />
-      <File FileName="Week3Log/Program.cs" Line="18" Column="120" />
-      <File FileName="Week3Log/app.log" Line="1" Column="1" />
-      <File FileName="Week3Log/Models/UserContext.cs" Line="1" Column="1" />
-      <File FileName="Week3Log/Models/User.cs" Line="14" Column="27" />
+      <File FileName="Week3Log/Middleware/Middleware.cs" Line="24" Column="52" />
+      <File FileName="Week3Log/Controllers/UserController.cs" />
+      <File FileName="Week3Log/Startup.cs" />
+      <File FileName="Week3Log/Program.cs" />
+      <File FileName="Week3Log/app.log" Line="13" Column="1" />
+      <File FileName="Week3Log/Models/UserContext.cs" />
+      <File FileName="Week3Log/Models/User.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,10 +20,9 @@
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Middleware" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="User.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="App.log" selected="True" />
             </Node>
           </Node>
         </State>
