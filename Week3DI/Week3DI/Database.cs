@@ -3,6 +3,7 @@ using Npgsql;
 using Week3DI.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Week3DI
 {
@@ -10,8 +11,8 @@ namespace Week3DI
     {
         int Create(Contact contact);
         List<Contact> Read(object id=null);
-        Contact Update(int id, Contact contact);
-        Contact Delete(int id);
+        List<Contact> Update(int id, Contact contact);
+        List<Contact> Delete(int id);
     }
 
     public class Database : IDatabase
@@ -59,24 +60,24 @@ namespace Week3DI
             return result;
         }
 
-        public Contact Delete(int id)
+        public List<Contact> Delete(int id)
         {
-            var retur = Read(id)[0];
-            var command = new NpgsqlCommand($"DELETE FROM contact WHERE id = {id}");
+            var retur = Read(id);
+            var command = new NpgsqlCommand($"DELETE FROM contact WHERE id = {id}", _connection);
             var result = command.ExecuteNonQuery();
-            return retur ;
+            return retur;
         }
 
-        public Contact Update(int id, Contact contact)
+        public List<Contact> Update(int id, Contact contact)
         {
-            var username = (contact.Username == null) ? null : $"username = {contact.Username}";
-            var pass = (contact.Pass == null) ? null : $"username = {contact.Pass}";
-            var email = (contact.Email == null) ? null : $"username = {contact.Email}";
-            var fullname = (contact.Full_Name == null) ? null : $"username = {contact.Full_Name}";
-            var command = new NpgsqlCommand($"UPDATE contact SET {username}, {pass}, {email}, {fullname} WHERE id = {id}");
+            var username = (contact.Username == null) ? null : $"username = {contact.Username},";
+            var pass = (contact.Pass == null) ? null : $"pass = {contact.Pass},";
+            var email = (contact.Email == null) ? null : $"email = {contact.Email},";
+            var fullname = (contact.Full_Name == null) ? null : $"fullname = {contact.Full_Name}";
+            var command = new NpgsqlCommand($"UPDATE contact SET {username} {pass} {email} {fullname} WHERE id = {id}", _connection);
 
             var result = command.ExecuteNonQuery();
-            return contact;
+            return new List<Contact>() { contact};
         }
     }
 }

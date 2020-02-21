@@ -42,6 +42,10 @@ namespace Week3WebAPI2.Controllers
         public IActionResult GetById(int id)
         {
             var result = _database.Read(id);
+            if (result.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(result);
         }
 
@@ -49,6 +53,10 @@ namespace Week3WebAPI2.Controllers
         public IActionResult DeleteById(int id)
         {
             var result = _database.Delete(id);
+            if (result.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(result);
         }
 
@@ -56,6 +64,10 @@ namespace Week3WebAPI2.Controllers
         public IActionResult PatchById(int id, Contact contact)
         {
             var result = _database.Update(id, contact);
+            if (result.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(result);
         }
     }
