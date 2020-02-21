@@ -28,12 +28,12 @@ namespace Week3DI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = new NpgsqlConnection("Host=127.0.0.1;Username=postgres;Password=password;Database=ContactDb");
+            var connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=docker;Database=postgres");
 
             services.AddControllersWithViews().AddNewtonsoftJson();
 
 
-            services.AddSingleton<NpgsqlConnection>(connection);
+            services.AddSingleton(connection);
             services.AddSingleton<IDatabase, Database>();
 
             services.AddControllers();
@@ -47,7 +47,7 @@ namespace Week3DI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
