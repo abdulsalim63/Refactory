@@ -1,0 +1,11 @@
+id,customer_id,registered,delivery_add_id,payment_type,dates,status,sessions,total
+21,6,f,5,,,Paid,,182389
+22,6,t,1,,,Canceled,,385376
+23,2,f,4,,,Canceled,,404804
+24,10,t,8,,,Canceled,,428182
+25,5,t,7,,,Canceled,,370261
+26,6,t,3,,,Canceled,,440665
+27,3,f,9,,,Canceled,,427954
+28,6,f,8,,,Canceled,,250107
+29,2,f,4,,,Paid,,144049
+30,5,f,6,,,Pending,,114408
