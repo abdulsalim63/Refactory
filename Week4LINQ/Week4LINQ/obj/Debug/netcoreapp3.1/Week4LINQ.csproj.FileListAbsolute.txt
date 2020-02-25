@@ -1,0 +1,13 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Week4LINQ.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.csproj.CopyComplete
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/obj/Debug/netcoreapp3.1/Week4LINQ.pdb
