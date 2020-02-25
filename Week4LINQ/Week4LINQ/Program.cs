@@ -54,7 +54,7 @@ namespace Week4LINQ
             var ariGrandTotal = secondClass.Where(x => x.customer.name.ToLower() == "ari").Sum(x => x.items.Sum(s => s.qty*s.price));
             var grandTotal = secondClass.GroupBy(g => g.customer.name)
                                         .Select(s => new { Name = s.Key, GrandTotal = s.Sum(sm => sm.items.Sum(it => it.qty * it.price))})
-                                        .Where(w => w.GrandTotal < 300000).ToList();
+                                        .Where(w => w.GrandTotal < 300000).Select(se => se.Name).ToList();
 
 
             //Third Json
