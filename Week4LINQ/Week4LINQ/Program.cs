@@ -52,7 +52,9 @@ namespace Week4LINQ
 
             var febPurchase = secondClass.Where(x => x.created_at.Substring(5, 2) == "02").ToList();
             var ariGrandTotal = secondClass.Where(x => x.customer.name.ToLower() == "ari").Sum(x => x.items.Sum(s => s.qty*s.price));
-            var grandTotal = secondClass.Select(x => new { Name = x.customer.name, Total = x.items.Sum(s => s.qty * s.price) }).ToList().Where(y => y.Total < 300000).Select(x => x.Name).Distinct().ToList();
+            var grandTotal = secondClass.GroupBy(g => g.customer.name)
+                                        .Select(s => new { Name = s.Key, GrandTotal = s.Sum(sm => sm.items.Sum(it => it.qty * it.price))})
+                                        .Where(w => w.GrandTotal < 300000).ToList();
 
 
             //Third Json
