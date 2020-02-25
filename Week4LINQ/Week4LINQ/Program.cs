@@ -52,7 +52,7 @@ namespace Week4LINQ
 
             var febPurchase = secondClass.Where(x => x.created_at.Substring(5, 2) == "02").ToList();
             var ariGrandTotal = secondClass.Sum(x => x.items.Sum(s => s.qty*s.price));
-            var grandTotal = secondClass.Select(x => new { Name = x.customer.name, Total = x.items.Sum(s => s.qty * s.price) }).ToList();
+            var grandTotal = secondClass.Select(x => new { Name = x.customer.name, Total = x.items.Sum(s => s.qty * s.price) }).ToList().Where(y => y.Total < 300000).Select(x => x.Name).Distinct().ToList();
 
 
             //Third Json
@@ -61,12 +61,16 @@ namespace Week4LINQ
 
             var meetingRoom = thirdClass.Where(x => x.placement.name.ToLower() == "meeting room").ToList();
             File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/MeetingRoom.json", JsonConvert.SerializeObject(meetingRoom));
+
             var elecDevices = thirdClass.Where(x => x.type.ToLower() == "electronic").ToList();
             File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/Electronic.json", JsonConvert.SerializeObject(elecDevices));
+
             var furnitures = thirdClass.Where(x => x.type.ToLower() == "furniture").ToList();
             File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/Furnitures.json", JsonConvert.SerializeObject(furnitures));
+
             var purchase16Jan = thirdClass.Where(x => x.purchased_at >= 1579132800 && x.purchased_at < 1579219200).ToList();
             File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/16January.json", JsonConvert.SerializeObject(purchase16Jan));
+
             var brownColor = thirdClass.Where(x => x.tags.Any(t => t.ToLower() == "brown")).ToList();
             File.WriteAllText("/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week4LINQ/Week4LINQ/Browns.json", JsonConvert.SerializeObject(brownColor));
 
