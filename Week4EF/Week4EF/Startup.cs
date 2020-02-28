@@ -27,7 +27,8 @@ namespace Week4EF
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ContactContext>(opt => opt.UseNpgsql("Host=localhost;Username=postgres;Password=docker;Database=firstsql"));
+            services.AddDbContext<ContactContext>(opt => opt.UseNpgsql("Host=ec2-54-80-184-43.compute-1.amazonaws.com;Username=ghehowoaimjugv;" +
+                "Password=d95edf276f2127462ed8da49697da4e2b52f388faa4a6ae4a7e01b9aa78769b9;Database=d7rv17i4l428vb;SSL Mode=Require;Trust Server Certificate=true"));
 
             services.AddControllersWithViews().AddNewtonsoftJson();
             services.AddControllers();
@@ -40,6 +41,8 @@ namespace Week4EF
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 

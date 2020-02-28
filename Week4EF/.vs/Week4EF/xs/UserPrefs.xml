@@ -1,23 +1,19 @@
 ﻿<Properties StartupConfiguration="{6595C7C0-9846-4DD9-AAA1-EECDE67AF3EC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week4EF/Controllers/ContactController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week4EF/Startup.cs">
     <Files>
-      <File FileName="Week4EF/Contact.cs" Line="12" Column="53" />
-      <File FileName="Week4EF/Startup.cs" Line="30" Column="143" />
-      <File FileName="Week4EF/Controllers/WeatherForecastController.cs" Line="12" Column="42" />
-      <File FileName="Week4EF/Controllers/ContactController.cs" Line="40" Column="1" />
+      <File FileName="Week4EF/Controllers/ContactController.cs" Line="13" Column="24" />
+      <File FileName="Week4EF/Startup.cs" Line="44" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Week4EF" expanded="True">
             <Node name="Week4EF" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="ContactController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
