@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{2FCE906F-A562-459F-8FE7-6D462FFA221C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week4JWTAuth/Controllers/CustomerController.cs">
+    <Files>
+      <File FileName="Week4JWTAuth/Startup.cs" Line="65" Column="37" />
+      <File FileName="Week4JWTAuth/Controllers/CustomerController.cs" Line="41" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Week4JWTAuth" expanded="True">
+            <Node name="Week4JWTAuth" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="CustomerController.cs" selected="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Week4JWTAuth PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
