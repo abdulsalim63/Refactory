@@ -20,9 +20,12 @@ namespace Week4JWTAuth
 {
     public class Startup
     {
+        private readonly string connectionString;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            connectionString = "Host=localhost;Username=postgres;Password=docker;Database=jwt";
         }
 
         public IConfiguration Configuration { get; }
@@ -32,8 +35,8 @@ namespace Week4JWTAuth
         {
             services.AddControllers();
 
-            services.AddDbContext<CustomerContext>(opt => opt.UseNpgsql("Host=localhost;Username=postgres;Password=docker;Database=jwt"));
-            services.AddDbContext<ProductContext>(opt => opt.UseNpgsql("Host=localhost;Username=postgres;Password=docker;Database=jwt"));
+            services.AddDbContext<CustomerContext>(opt => opt.UseNpgsql(connectionString));
+            services.AddDbContext<ProductContext>(opt => opt.UseNpgsql(connectionString));
 
             services.AddAuthentication(options => {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
