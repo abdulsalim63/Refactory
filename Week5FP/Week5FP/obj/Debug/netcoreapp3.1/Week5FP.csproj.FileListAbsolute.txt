@@ -1,0 +1,10 @@
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/bin/Debug/netcoreapp3.1/Week5FP.deps.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/bin/Debug/netcoreapp3.1/Week5FP.runtimeconfig.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/bin/Debug/netcoreapp3.1/Week5FP.runtimeconfig.dev.json
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/bin/Debug/netcoreapp3.1/Week5FP.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/bin/Debug/netcoreapp3.1/Week5FP.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/obj/Debug/netcoreapp3.1/Week5FP.csprojAssemblyReference.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/obj/Debug/netcoreapp3.1/Week5FP.AssemblyInfoInputs.cache
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/obj/Debug/netcoreapp3.1/Week5FP.AssemblyInfo.cs
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/obj/Debug/netcoreapp3.1/Week5FP.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week5FP/Week5FP/obj/Debug/netcoreapp3.1/Week5FP.pdb
