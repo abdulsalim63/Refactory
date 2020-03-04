@@ -4486,7 +4486,7 @@
       "fluentvalidation.aspnetcore >= 8.6.2",
       "mediatr >= 8.0.1",
       "mediatr.extensions.microsoft.dependencyinjection >= 8.0.0",
-      "microsoft.aspnetcore.authentication.jwtbearer",
+      "microsoft.aspnetcore.authentication.jwtbearer >= 3.1.2",
       "microsoft.entityframeworkcore >= 3.1.2",
       "microsoft.entityframeworkcore.design >= 3.1.2",
       "npgsql.entityframeworkcore.postgresql >= 3.1.2"
@@ -4545,7 +4545,7 @@
           },
           "microsoft.aspnetcore.authentication.jwtbearer": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.1.2, )"
           },
           "microsoft.entityframeworkcore": {
             "target": "Package",

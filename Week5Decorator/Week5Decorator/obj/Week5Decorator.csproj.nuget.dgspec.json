@@ -53,7 +53,7 @@
             },
             "microsoft.aspnetcore.authentication.jwtbearer": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[3.1.2, )"
             },
             "microsoft.entityframeworkcore": {
               "target": "Package",
