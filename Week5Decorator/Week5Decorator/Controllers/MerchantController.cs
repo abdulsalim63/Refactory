@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Week5Decorator.Models;
 
@@ -7,6 +8,7 @@ namespace Week5Decorator.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class MerchantController : ControllerBase
     {
         private readonly MerchantProductContext _context;
