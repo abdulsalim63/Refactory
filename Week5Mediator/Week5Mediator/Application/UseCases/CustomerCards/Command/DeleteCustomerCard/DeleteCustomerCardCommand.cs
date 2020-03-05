@@ -4,13 +4,8 @@ using Week5Mediator.Application.UseCases.CustomerCards.Models;
 
 namespace Week5Mediator.Application.UseCases.CustomerCards.Command.DeleteCustomerCard
 {
-    public class CreateCustomerCardCommand : IRequest<CreateCustomerCardCommandDto>
+    public class DeleteCustomerCardCommand : IRequest<DeleteCustomerCardCommandDto>
     {
-        public CustomerCardAttributes data { get; set; }
-    }
-
-    public class CustomerCardAttributes
-    {
-        public CustomerCardsData attributes { get; set; }
+        public int id { get; set; }
     }
 }

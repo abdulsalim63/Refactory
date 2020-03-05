@@ -29,12 +29,12 @@ namespace Week5Mediator.Application.UseCases.CustomerCards.Command.CreateCustome
                 credit_card_number = input.credit_card_number
             };
 
-            //_context.customers.Add(customer);
+            //_context.customerCards.Add(customerCard);
             //await _context.SaveChangesAsync(cancellationToken);
 
             return new CreateCustomerCardCommandDto
             {
-                Message = "Success add customer data",
+                Message = "Success add customer card data",
                 Success = true,
                 Data = customerCard
             };

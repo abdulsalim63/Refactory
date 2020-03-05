@@ -4,7 +4,7 @@ using Week5Mediator.Domain.Models;
 
 namespace Week5Mediator.Application.UseCases.CustomerCards.Command.DeleteCustomerCard
 {
-    public class CreateCustomerCardCommandDto : BaseDto
+    public class DeleteCustomerCardCommandDto : BaseDto
     {
         public CustomerCard Data { get; set; }
     }

@@ -18,30 +18,29 @@ namespace Week5Mediator.Presenter.Controllers
     {
         private IMediator _mediatr;
 
-        protected IMediator Mediator => _mediatr ?? (_mediatr = HttpContext.RequestServices.GetService<IMediator>());
-
-        public MerchantController()
+        public MerchantController(IMediator mediator)
         {
+            _mediatr = mediator;
         }
 
         [HttpGet]
         public async Task<ActionResult<GetMerchantsDto>> Get()
         {
-            return Ok(await Mediator.Send(new GetMerchantsQuery() { }));
+            return Ok(await _mediatr.Send(new GetMerchantsQuery() { }));
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<GetMerchantDto>> Get(int id)
         {
 
-            return Ok(await Mediator.Send(new GetMerchantQuery() { id = id }));
+            return Ok(await _mediatr.Send(new GetMerchantQuery() { id = id }));
         }
 
         [HttpPost]
         public async Task<ActionResult<CreateMerchantCommandDto>> Post([FromBody] CreateMerchantCommand payload)
         {
 
-            return Ok(await Mediator.Send(payload));
+            return Ok(await _mediatr.Send(payload));
         }
 
         [HttpPut("{id}")]

@@ -7,36 +7,27 @@ using System.Threading;
 
 namespace Week5Mediator.Application.UseCases.CustomerCards.Command.DeleteCustomerCard
 {
-    public class CreateCustomerCardCommandHandler : IRequestHandler<CreateCustomerCardCommand, CreateCustomerCardCommandDto>
+    public class DeleteCustomerCardCommandHandler : IRequestHandler<DeleteCustomerCardCommand, DeleteCustomerCardCommandDto>
     {
         private readonly IBlogContext _context;
 
-        public CreateCustomerCardCommandHandler(IBlogContext context)
+        public DeleteCustomerCardCommandHandler(IBlogContext context)
         {
             _context = context;
         }
 
-        public async Task<CreateCustomerCardCommandDto> Handle(CreateCustomerCardCommand request, CancellationToken cancellationToken)
+        public async Task<DeleteCustomerCardCommandDto> Handle(DeleteCustomerCardCommand request, CancellationToken cancellationToken)
         {
-            var input = request.data.attributes;
-            var customerCard = new Domain.Models.CustomerCard
-            {
-                customer_id = input.customer_id,
-                name_on_card = input.name_on_card,
-                exp_month = input.exp_month,
-                exp_year = input.exp_year,
-                postal_code = input.postal_code,
-                credit_card_number = input.credit_card_number
-            };
+            var result = await _context.customerCards.FirstOrDefaultAsync(x => x.id == request.id);
 
-            //_context.customers.Add(customer);
-            //await _context.SaveChangesAsync(cancellationToken);
+            _context.customerCards.Remove(result);
+            await _context.SaveChangesAsync(cancellationToken);
 
-            return new CreateCustomerCardCommandDto
+            return new DeleteCustomerCardCommandDto
             {
-                Message = "Success add customer data",
+                Message = "Success delete customer card data",
                 Success = true,
-                Data = customerCard
+                Data = result
             };
         }
     }

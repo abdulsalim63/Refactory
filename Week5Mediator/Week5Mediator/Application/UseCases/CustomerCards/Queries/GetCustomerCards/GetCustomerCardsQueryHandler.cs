@@ -25,7 +25,7 @@ namespace Week5Mediator.Application.UseCases.CustomerCards.Queries.GetCustomerCa
 
             return new GetCustomerCardsDto
             {
-                Message = "Success retrieve customer data",
+                Message = "Success retrieve customer card data",
                 Success = true,
                 Data = result.Select(s => new CustomerCardsData {
                     customer_id = s.customer_id,

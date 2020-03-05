@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Week5Mediator.Application.UseCases.CustomerCards.Queries.GetCustomerCard;
 using Week5Mediator.Application.UseCases.CustomerCards.Queries.GetCustomerCards;
 using Week5Mediator.Application.UseCases.CustomerCards.Command.CreateCustomerCard;
+using Week5Mediator.Application.UseCases.CustomerCards.Command.DeleteCustomerCard;
 
 namespace Week5Mediator.Presenter.Controllers
 {
@@ -18,30 +19,29 @@ namespace Week5Mediator.Presenter.Controllers
     {
         private IMediator _mediatr;
 
-        protected IMediator Mediator => _mediatr ?? (_mediatr = HttpContext.RequestServices.GetService<IMediator>());
-
-        public CustomerCardController()
+        public CustomerCardController(IMediator mediator)
         {
+            _mediatr = mediator;
         }
 
         [HttpGet]
         public async Task<ActionResult<GetCustomerCardsDto>> Get()
         {
-            return Ok(await Mediator.Send(new GetCustomerCardsQuery() { }));
+            return Ok(await _mediatr.Send(new GetCustomerCardsQuery() { }));
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<GetCustomerCardDto>> Get(int id)
         {
 
-            return Ok(await Mediator.Send(new GetCustomerCardQuery() { id = id }));
+            return Ok(await _mediatr.Send(new GetCustomerCardQuery() { id = id }));
         }
 
         [HttpPost]
         public async Task<ActionResult<CreateCustomerCardCommandDto>> Post([FromBody] CreateCustomerCardCommand payload)
         {
 
-            return Ok(await Mediator.Send(payload));
+            return Ok(await _mediatr.Send(payload));
         }
 
         [HttpPut("{id}")]
@@ -51,9 +51,10 @@ namespace Week5Mediator.Presenter.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<ActionResult<GetCustomerCardDto>> Delete(int id)
         {
-            return Ok();
+
+            return Ok(await _mediatr.Send(new DeleteCustomerCardCommand() { id = id }));
         }
 
     }

@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{66A4F0C5-E748-4A44-A022-7BF868A0EC6F}|Default">
   <MonoDevelop.Ide.ItemProperties.Week5Mediator PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Week5Mediator/Application/UseCases/CustomerCards/Command/CreateCustomerCard/CreateCustomerCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week5Mediator/Presenter/Controllers/CustomerCardController.cs">
     <Files>
-      <File FileName="Week5Mediator/Presenter/Controllers/CustomerController.cs" Line="50" Column="1" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/DeleteCustomerCard/CreateCustomerCardCommand.cs" Line="12" Column="40" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/DeleteCustomerCard/CreateCustomerCardCommandDto.cs" Line="5" Column="86" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/DeleteCustomerCard/CreateCustomerCommandHandler.cs" Line="8" Column="86" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/DeleteCustomerCard/CreateCustomerCommandValidation.cs" Line="4" Column="86" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/CreateCustomerCard/CreateCustomerCardCommand.cs" Line="1" Column="1" />
-      <File FileName="Week5Mediator/Application/UseCases/CustomerCards/Command/CreateCustomerCard/CreateCustomerCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="Week5Mediator/Startup.cs" Line="48" Column="89" />
+      <File FileName="Week5Mediator/Presenter/Controllers/CustomerCardController.cs" Line="57" Column="37" />
+      <File FileName="Week5Mediator/Presenter/Controllers/CustomerController.cs" Line="1" Column="1" />
+      <File FileName="Week5Mediator/Presenter/Controllers/MerchantController.cs" Line="1" Column="1" />
+      <File FileName="Week5Mediator/Presenter/Controllers/ProductController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,16 +17,19 @@
                 <Node name="UseCases" expanded="True">
                   <Node name="CustomerCards" expanded="True">
                     <Node name="Command" expanded="True">
-                      <Node name="CreateCustomerCard" expanded="True">
-                        <Node name="CreateCustomerCommandHandler.cs" selected="True" />
-                      </Node>
                       <Node name="DeleteCustomerCard" expanded="True" />
+                    </Node>
+                    <Node name="Queries" expanded="True">
+                      <Node name="GetCustomerCard" expanded="True" />
+                      <Node name="GetCustomerCards" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
               </Node>
               <Node name="Presenter" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="CustomerCardController.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -23,7 +23,7 @@ namespace Week5Mediator.Application.UseCases.CustomerCards.Queries.GetCustomerCa
 
             return new GetCustomerCardDto
             {
-                Message = "Success retrieve customer data",
+                Message = "Success retrieve customer card data",
                 Success = true,
                 Data = new CustomerCardsData
                 {
