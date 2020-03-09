@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{049608C7-B2EC-4AFE-BE7E-6E5CF161D9DD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerAndCustomerCard/Startup.cs">
+    <Files>
+      <File FileName="CustomerAndCustomerCard/appsettings.json" Line="20" Column="2" />
+      <File FileName="CustomerAndCustomerCard/CustomerAndCustomerCard.csproj" />
+      <File FileName="CustomerAndCustomerCard/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CustomerAndCustomerCard" expanded="True">
+            <Node name="CustomerAndCustomerCard" expanded="True">
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Presenter" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CustomerAndCustomerCard PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

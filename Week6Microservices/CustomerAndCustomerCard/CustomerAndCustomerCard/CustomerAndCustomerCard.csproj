@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Presenter\" />
+    <Folder Include="Presenter\Controllers\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Interfaces\" />
+    <Folder Include="Application\Models\" />
+    <Folder Include="Application\UseCases\" />
+    <Folder Include="Application\Models\Query\" />
+    <Folder Include="Application\UseCases\Customers\" />
+    <Folder Include="Application\UseCases\Customers\Models\" />
+    <Folder Include="Application\UseCases\Customers\Command\" />
+    <Folder Include="Application\UseCases\Customers\Queries\" />
+    <Folder Include="Application\UseCases\CustomerCards\" />
+    <Folder Include="Application\UseCases\CustomerCards\Models\" />
+    <Folder Include="Application\UseCases\CustomerCards\Command\" />
+    <Folder Include="Application\UseCases\CustomerCards\Queries\" />
+    <Folder Include="Application\UseCases\CustomerCards\Command\Create\" />
+    <Folder Include="Application\UseCases\CustomerCards\Command\Delete\" />
+    <Folder Include="Application\UseCases\CustomerCards\Command\Update\" />
+    <Folder Include="Application\UseCases\CustomerCards\Queries\Get\" />
+    <Folder Include="Application\UseCases\CustomerCards\Queries\Gets\" />
+    <Folder Include="Application\UseCases\Customers\Command\Create\" />
+    <Folder Include="Application\UseCases\Customers\Command\Delete\" />
+    <Folder Include="Application\UseCases\Customers\Command\Update\" />
+    <Folder Include="Application\UseCases\Customers\Queries\Get\" />
+    <Folder Include="Application\UseCases\Customers\Queries\Gets\" />
+  </ItemGroup>
+    <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="mediatr" Version="8.0.1" />
+    <PackageReference Include="mediatr.extensions.microsoft.dependencyinjection" Version="8.0.0" />
+    <PackageReference Include="microsoft.aspnetcore.authentication.jwtbearer" Version="3.1.2" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="3.1.2" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="npgsql.entityframeworkcore.postgresql" Version="3.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomerAndCustomerCard.csproj" />
+  </ItemGroup>
+</Project>
