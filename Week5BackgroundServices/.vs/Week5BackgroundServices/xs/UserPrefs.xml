@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{49E9A9E3-8B52-4C7C-A384-7A28D4757509}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Week5BackgroundServices/Startup.cs">
+    <Files>
+      <File FileName="Week5BackgroundServices/Startup.cs" Line="87" Column="2" IsPinned="True" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Week5BackgroundServices" expanded="True">
+            <Node name="Week5BackgroundServices" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="UseCases" expanded="True">
+                  <Node name="CustomerCards" expanded="True">
+                    <Node name="Command" expanded="True">
+                      <Node name="Create" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Customers" expanded="True">
+                    <Node name="Command" expanded="True">
+                      <Node name="Create" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Presenter" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Week5BackgroundServices PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

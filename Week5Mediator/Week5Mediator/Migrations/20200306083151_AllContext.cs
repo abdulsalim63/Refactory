@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Week5Mediator.Migrations
 {
-    public partial class DataContext : Migration
+    public partial class AllContext : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

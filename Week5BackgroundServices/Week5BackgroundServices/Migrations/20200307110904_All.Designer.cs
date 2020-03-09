@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Week5Mediator.Infrastructure;
+using Week5BackgroundServices.Infrastructure;
 
-namespace Week5Mediator.Migrations
+namespace Week5BackgroundServices.Migrations
 {
-    [DbContext(typeof(AllContext))]
-    [Migration("20200305063300_DataContext")]
-    partial class DataContext
+    [DbContext(typeof(ProjectContext))]
+    [Migration("20200307110904_All")]
+    partial class All
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace Week5Mediator.Migrations
                 .HasAnnotation("ProductVersion", "3.1.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.Customer", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.Customer", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -60,7 +60,7 @@ namespace Week5Mediator.Migrations
                     b.ToTable("customers");
                 });
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.CustomerCard", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.CustomerCard", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -96,10 +96,10 @@ namespace Week5Mediator.Migrations
                     b.HasIndex("customer_id")
                         .IsUnique();
 
-                    b.ToTable("customerCards");
+                    b.ToTable("customercards");
                 });
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.Merchant", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.Merchant", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -129,7 +129,7 @@ namespace Week5Mediator.Migrations
                     b.ToTable("merchants");
                 });
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.Product", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.Product", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -158,18 +158,18 @@ namespace Week5Mediator.Migrations
                     b.ToTable("products");
                 });
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.CustomerCard", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.CustomerCard", b =>
                 {
-                    b.HasOne("Week5Mediator.Domain.Models.Customer", "Customer")
+                    b.HasOne("Week5BackgroundServices.Domain.Entities.Customer", "Customer")
                         .WithOne("CustomerCard")
-                        .HasForeignKey("Week5Mediator.Domain.Models.CustomerCard", "customer_id")
+                        .HasForeignKey("Week5BackgroundServices.Domain.Entities.CustomerCard", "customer_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Week5Mediator.Domain.Models.Product", b =>
+            modelBuilder.Entity("Week5BackgroundServices.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("Week5Mediator.Domain.Models.Merchant", "Merchant")
+                    b.HasOne("Week5BackgroundServices.Domain.Entities.Merchant", "Merchant")
                         .WithMany("Product")
                         .HasForeignKey("merchant_id")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5BackgroundServices", "Week5BackgroundServices\Week5BackgroundServices.csproj", "{49E9A9E3-8B52-4C7C-A384-7A28D4757509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49E9A9E3-8B52-4C7C-A384-7A28D4757509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E9A9E3-8B52-4C7C-A384-7A28D4757509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E9A9E3-8B52-4C7C-A384-7A28D4757509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E9A9E3-8B52-4C7C-A384-7A28D4757509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
