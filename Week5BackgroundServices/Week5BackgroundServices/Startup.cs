@@ -41,7 +41,7 @@ namespace Week5BackgroundServices
             services.AddControllers();
 
             services.AddHangfire(option =>
-                option.UsePostgreSqlStorage("Host=localhost;Username=postgres;Password=docker;Database=backgroundservices"));
+                option.UsePostgreSqlStorage(connectionString));
 
             services.AddDbContext<ProjectContext>(opt => opt.UseNpgsql(connectionString));
 
