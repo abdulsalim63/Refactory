@@ -36,6 +36,7 @@
     <Folder Include="Application\UseCases\Customers\Command\Update\" />
     <Folder Include="Application\UseCases\Customers\Queries\Get\" />
     <Folder Include="Application\UseCases\Customers\Queries\Gets\" />
+    <Folder Include="database\" />
   </ItemGroup>
     <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />

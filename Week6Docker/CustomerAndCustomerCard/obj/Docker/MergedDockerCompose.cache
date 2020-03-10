@@ -1,0 +1,16 @@
+services:
+  customerandcustomercard:
+    build:
+      context: /Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week6Docker/CustomerAndCustomerCard
+      dockerfile: CustomerAndCustomerCard/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: customerandcustomercard
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/gigaming/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/gigaming/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
