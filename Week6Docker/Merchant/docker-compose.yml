@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  merchant:
+    image: ${DOCKER_REGISTRY-}merchant
+    build:
+      context: .
+      dockerfile: Merchant/Dockerfile

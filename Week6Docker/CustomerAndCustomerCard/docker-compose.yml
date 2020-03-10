@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  customerandcustomercard:
+    image: ${DOCKER_REGISTRY-}customerandcustomercard
+    build:
+      context: .
+      dockerfile: CustomerAndCustomerCard/Dockerfile

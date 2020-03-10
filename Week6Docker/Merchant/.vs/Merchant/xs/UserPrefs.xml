@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{8902A699-64CC-427A-A920-1644B7C18F81}|Default">
+  <MonoDevelop.Ide.ItemProperties.Merchant PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Merchant/appsettings.json">
+    <Files>
+      <File FileName="Merchant/Startup.cs" Line="36" Column="1" />
+      <File FileName="Merchant/appsettings.json" Line="11" Column="40" />
+      <File FileName="Merchant/Dockerfile" Line="12" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Merchant" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="Merchant" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+                <Node name="UseCases" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Presenter" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

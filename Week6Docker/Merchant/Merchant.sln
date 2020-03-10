@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merchant", "Merchant\Merchant.csproj", "{4AED322E-E4DA-4A39-8B2D-5A22C73551DF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8902A699-64CC-427A-A920-1644B7C18F81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AED322E-E4DA-4A39-8B2D-5A22C73551DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AED322E-E4DA-4A39-8B2D-5A22C73551DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AED322E-E4DA-4A39-8B2D-5A22C73551DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AED322E-E4DA-4A39-8B2D-5A22C73551DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8902A699-64CC-427A-A920-1644B7C18F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8902A699-64CC-427A-A920-1644B7C18F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8902A699-64CC-427A-A920-1644B7C18F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8902A699-64CC-427A-A920-1644B7C18F81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

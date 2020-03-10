@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>43dea90b-351a-421a-97a6-a90a1bfccd7d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Presenter\" />
+    <Folder Include="Presenter\Controllers\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Interfaces\" />
+    <Folder Include="Application\Models\" />
+    <Folder Include="Application\UseCases\" />
+    <Folder Include="Application\Models\Query\" />
+    <Folder Include="Application\UseCases\Products\" />
+    <Folder Include="Application\UseCases\Products\Models\" />
+    <Folder Include="Application\UseCases\Products\Command\" />
+    <Folder Include="Application\UseCases\Products\Queries\" />
+    <Folder Include="Application\UseCases\Products\Command\Create\" />
+    <Folder Include="Application\UseCases\Products\Command\Delete\" />
+    <Folder Include="Application\UseCases\Products\Command\Update\" />
+    <Folder Include="Application\UseCases\Products\Queries\Get\" />
+    <Folder Include="Application\UseCases\Products\Queries\Gets\" />
+  </ItemGroup>
+    <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="mediatr" Version="8.0.1" />
+    <PackageReference Include="mediatr.extensions.microsoft.dependencyinjection" Version="8.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="3.1.2" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="npgsql.entityframeworkcore.postgresql" Version="3.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Product.csproj" />
+  </ItemGroup>
+</Project>
