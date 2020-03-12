@@ -47,22 +47,6 @@ namespace Merchant
 
             services.AddTransient<IValidator<BaseRequest<MerchantInput>>, CreateMerchantCommandValidation>()
                     .AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidatorBehaviour<,>));
-
-            services.AddAuthentication(options => {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options =>
-            {
-                options.RequireHttpsMetadata = false;
-                options.SaveToken = false;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("this is encryption key")),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
-                };
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -74,8 +58,6 @@ namespace Merchant
             }
 
             app.UseRouting();
-
-            app.UseAuthentication();
 
             app.UseAuthorization();
 

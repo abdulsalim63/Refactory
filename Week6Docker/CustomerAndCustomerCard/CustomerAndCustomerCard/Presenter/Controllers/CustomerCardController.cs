@@ -10,7 +10,6 @@ namespace CustomerCardAndCustomerCardCard.Presenter.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
     public class CustomerCardController : ControllerBase
     {
         private readonly IMediator _mediator;

@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{379DA02E-8094-4BA6-8846-84557002C6D2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerAndCustomerCard/Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerAndCustomerCard/appsettings.json">
     <Files>
       <File FileName="CustomerAndCustomerCard/appsettings.json" Line="11" Column="40" />
       <File FileName="CustomerAndCustomerCard/CustomerAndCustomerCard.csproj" />
       <File FileName="CustomerAndCustomerCard/Startup.cs" />
       <File FileName="CustomerAndCustomerCard/Presenter/Controllers/CustomerController.cs" />
-      <File FileName="CustomerAndCustomerCard/Dockerfile" Line="14" Column="1" />
+      <File FileName="CustomerAndCustomerCard/Dockerfile" />
+      <File FileName="CustomerAndCustomerCard/Presenter/Controllers/CustomerCardController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
               <Node name="Presenter" expanded="True">
                 <Node name="Controllers" expanded="True" />
               </Node>
-              <Node name="Dockerfile" selected="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
             <Node name="docker-compose" expanded="True" />
           </Node>

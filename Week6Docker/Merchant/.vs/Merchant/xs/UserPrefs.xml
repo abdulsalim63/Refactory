@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{8902A699-64CC-427A-A920-1644B7C18F81}|Default">
   <MonoDevelop.Ide.ItemProperties.Merchant PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Merchant/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Merchant/Startup.cs">
     <Files>
-      <File FileName="Merchant/Startup.cs" Line="36" Column="1" />
+      <File FileName="Merchant/Startup.cs" Line="60" Column="30" />
       <File FileName="Merchant/appsettings.json" Line="11" Column="40" />
       <File FileName="Merchant/Dockerfile" Line="12" Column="34" />
     </Files>
@@ -23,7 +23,7 @@
               <Node name="Presenter" expanded="True">
                 <Node name="Controllers" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
