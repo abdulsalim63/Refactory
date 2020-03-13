@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  pg-docker:
+    image: postgres
+    restart: always
+    networks: 
+      - default
+    environment:
+      POSTGRES_PASSWORD: docker
+    ports:
+      - "5432:5432"
+      
+networks:
+  default:

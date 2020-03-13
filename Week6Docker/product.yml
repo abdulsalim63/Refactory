@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  productservices:
+    image: abdulsalim/product
+    networks: 
+      - default
+    ports:
+      - "5555:5000"
+
+networks:
+  default:

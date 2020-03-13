@@ -6,6 +6,8 @@ RUN dotnet restore
 
 COPY . ./
 RUN dotnet publish -c Release -o /app/publish
+# RUN chmod +x ./entrypoint.sh
+# CMD /bin/bash ./entrypoint.sh
 
 FROM mcr.microsoft.com/dotnet/core/aspnet
 WORKDIR /app
