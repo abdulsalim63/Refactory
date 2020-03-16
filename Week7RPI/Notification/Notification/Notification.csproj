@@ -19,6 +19,10 @@
     <Folder Include="Application\UseCases\Notifications\Command\Create\" />
     <Folder Include="Application\Models\" />
     <Folder Include="Application\UseCases\Notifications\Models\" />
+    <Folder Include="Application\UseCases\Notifications\Command\Update\" />
+    <Folder Include="Application\UseCases\Notifications\Queries\Get\" />
+    <Folder Include="Application\UseCases\Notifications\Queries\Gets\" />
+    <Folder Include="Application\UseCases\Notifications\Command\Delete\" />
   </ItemGroup>
 
 

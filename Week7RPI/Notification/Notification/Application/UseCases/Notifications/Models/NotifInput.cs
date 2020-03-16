@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Notification.Application.UseCases.Notifications//.Models
 {
@@ -14,7 +15,10 @@ namespace Notification.Application.UseCases.Notifications//.Models
 
     public class Target
     {
+        [Required]
         public int id { get; set; }
+        [Required]
+        [EmailAddress]
         public string email_destination { get; set; }
     }
 }

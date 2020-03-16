@@ -35,3 +35,5 @@
 /Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/obj/Debug/netcoreapp3.1/staticwebassets/Notification.StaticWebAssets.xml
 /Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/obj/Debug/netcoreapp3.1/Notification.dll
 /Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/obj/Debug/netcoreapp3.1/Notification.pdb
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/bin/Debug/netcoreapp3.1/MediatR.dll
+/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/bin/Debug/netcoreapp3.1/MediatR.Extensions.Microsoft.DependencyInjection.dll

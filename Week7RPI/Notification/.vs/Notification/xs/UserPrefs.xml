@@ -2,10 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Notification PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Notification/Startup.cs">
     <Files>
-      <File FileName="Notification/Startup.cs" Line="37" Column="14" />
-      <File FileName="Notification/Presenter/Controller/NotificationController.cs" Line="25" Column="10" />
-      <File FileName="Notification/Application/UseCases/Notifications/Command/Create/CreateCommand.cs" Line="7" Column="68" />
-      <File FileName="Notification/Application/UseCases/Notifications/Command/Create/CreateCommandHandler.cs" Line="21" Column="31" />
+      <File FileName="Notification/Startup.cs" Line="50" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,10 +15,22 @@
                   <Node name="Notifications" expanded="True">
                     <Node name="Command" expanded="True">
                       <Node name="Create" expanded="True" />
+                      <Node name="Delete" expanded="True" />
+                      <Node name="Update" expanded="True" />
                     </Node>
                     <Node name="Models" expanded="True" />
+                    <Node name="Queries" expanded="True">
+                      <Node name="Get" expanded="True" />
+                      <Node name="Gets" expanded="True" />
+                    </Node>
                   </Node>
                 </Node>
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Migrations" expanded="True" />
               </Node>
               <Node name="Presenter" expanded="True">
                 <Node name="Controller" expanded="True" />
