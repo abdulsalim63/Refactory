@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{EFF0A0E0-FA98-47FC-A14A-0F298D65E432}|Default">
+  <MonoDevelop.Ide.ItemProperties.Notification PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Notification/Startup.cs">
+    <Files>
+      <File FileName="Notification/Startup.cs" Line="37" Column="14" />
+      <File FileName="Notification/Presenter/Controller/NotificationController.cs" Line="25" Column="10" />
+      <File FileName="Notification/Application/UseCases/Notifications/Command/Create/CreateCommand.cs" Line="7" Column="68" />
+      <File FileName="Notification/Application/UseCases/Notifications/Command/Create/CreateCommandHandler.cs" Line="21" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Notification" expanded="True">
+            <Node name="Notification" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="UseCases" expanded="True">
+                  <Node name="Notifications" expanded="True">
+                    <Node name="Command" expanded="True">
+                      <Node name="Create" expanded="True" />
+                    </Node>
+                    <Node name="Models" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Presenter" expanded="True">
+                <Node name="Controller" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
