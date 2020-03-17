@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{96698669-ED6D-478C-B34A-99147A813FE9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="User/Dockerfile">
+    <Files>
+      <File FileName="User/Startup.cs" Line="37" Column="83" />
+      <File FileName="User/Presenter/Controller/UserController.cs" Line="43" Column="36" />
+      <File FileName="User/Application/UseCases/Users/Command/Create/CreateCommand.cs" Line="1" Column="1" />
+      <File FileName="User/Application/UseCases/Users/Command/Create/CreateCommandHandler.cs" Line="52" Column="46" />
+      <File FileName="User/appsettings.json" Line="11" Column="31" />
+      <File FileName="User/Dockerfile" Line="19" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="User" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="User" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="UseCases" expanded="True">
+                  <Node name="Users" expanded="True">
+                    <Node name="Command" expanded="True">
+                      <Node name="Create" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Presenter" expanded="True">
+                <Node name="Controller" expanded="True" />
+              </Node>
+              <Node name="Dockerfile" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.User PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

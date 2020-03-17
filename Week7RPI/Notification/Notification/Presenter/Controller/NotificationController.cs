@@ -30,6 +30,13 @@ namespace Notification.Presenter.Controller
             return Ok(await _mediator.Send(new GetNotificationsQuery() { include = Include }));
         }
 
+        [HttpGet("logs")]
+        public async Task<IActionResult> GetLogs(string target)
+        {
+            var Target = target ?? "0" ;
+            return Ok(await _mediator.Send(new LogsQuery() { target = Convert.ToInt32(Target)}));
+        }
+
         [HttpGet("{Id}")]
         public async Task<IActionResult> GetbyId(int Id, string include)
         {
