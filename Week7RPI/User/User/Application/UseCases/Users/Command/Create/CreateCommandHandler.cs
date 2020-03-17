@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using RestSharp;
 using User.Application.Models;
@@ -16,9 +17,12 @@ namespace User.Application.UseCases.Users //.Command.Create
     {
         private readonly UserContext _context;
 
-        public CreateUserCommandHandler(UserContext context)
+        private readonly HttpContext _httpContext;
+
+        public CreateUserCommandHandler(UserContext context, HttpContext httpContext)
         {
             _context = context;
+            _httpContext = httpContext;
         }
 
         public async Task<BaseDto<UserOutput>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
@@ -28,13 +32,12 @@ namespace User.Application.UseCases.Users //.Command.Create
             _context.users.Add(userData);
             await _context.SaveChangesAsync(cancellationToken);
 
-
             var client = new RestClient("http://localhost:6000/notification?include=logs");
             client.Timeout = -1;
             var restRequest = new RestRequest(Method.GET);
 
             restRequest.AddHeader("Content-Type", "application/json");
-            restRequest.AddHeader("Authorization", "Bearer "); // JWT Key
+            restRequest.AddHeader("Authorization", _httpContext.Request.Headers["Authorization"]); // JWT Key
             restRequest.AddParameter("application/json", "", ParameterType.RequestBody);
 
             var response = client.Execute(restRequest);

@@ -3,11 +3,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using Notification.Application.UseCases.Notifications;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Notification.Presenter.Controller
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class NotificationController : ControllerBase
     {
         private readonly IMediator _mediator;
