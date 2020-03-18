@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{721497D5-A9DA-4A8B-A399-5E2DB97B2B95}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Notification/Presenter/Authentication.cs">
+    <Files>
+      <File FileName="Notification/Startup.cs" Line="69" Column="37" />
+      <File FileName="Notification/appsettings.json" Line="16" Column="39" />
+      <File FileName="Notification/Application/UseCases/Notifications/Queries/Logs/LogsQuery.cs" Line="8" Column="50" />
+      <File FileName="Notification/Application/UseCases/Notifications/Queries/Logs/LogsQueryHandler.cs" Line="25" Column="64" />
+      <File FileName="Notification/Dockerfile" Line="12" Column="18" />
+      <File FileName="Notification/Notification.csproj" Line="47" Column="1" />
+      <File FileName="Notification/Presenter/Authentication.cs" Line="18" Column="18" />
+      <File FileName="Notification/Presenter/Controller/NotificationController.cs" Line="12" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Notification" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="Notification" expanded="True">
+              <Node name="Presenter" expanded="True">
+                <Node name="Controller" expanded="True" />
+                <Node name="Authentication.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
