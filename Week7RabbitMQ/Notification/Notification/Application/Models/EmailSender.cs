@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using MailKit.Net.Smtp;
-using MailKit.Security;
 using MimeKit;
 
-namespace User.Application.Models
+namespace Notification.Application.Models
 {
     public class EmailSender
     {

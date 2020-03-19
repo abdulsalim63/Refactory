@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
@@ -17,12 +18,9 @@ namespace User.Application.UseCases.Users //.Command.Create
     {
         private readonly UserContext _context;
 
-        private readonly HttpContext _httpContext;
-
-        public CreateUserCommandHandler(UserContext context, HttpContext httpContext)
+        public CreateUserCommandHandler(UserContext context)
         {
             _context = context;
-            _httpContext = httpContext;
         }
 
         public async Task<BaseDto<UserOutput>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
@@ -32,36 +30,29 @@ namespace User.Application.UseCases.Users //.Command.Create
             _context.users.Add(userData);
             await _context.SaveChangesAsync(cancellationToken);
 
-            var client = new RestClient("http://localhost:6000/notification?include=logs");
-            client.Timeout = -1;
-            var restRequest = new RestRequest(Method.GET);
+            Publisher.Send("localhost", $"{userData.id.ToString()} {userData.email}");
 
-            restRequest.AddHeader("Content-Type", "application/json");
-            restRequest.AddHeader("Authorization", _httpContext.Request.Headers["Authorization"]); // JWT Key
-            restRequest.AddParameter("application/json", "", ParameterType.RequestBody);
+            //var baseValue = JsonConvert.DeserializeObject<BaseDto<IncomingNotif>>(response.Content).data;
 
-            var response = client.Execute(restRequest);
-            var baseValue = JsonConvert.DeserializeObject<BaseDto<IncomingNotif>>(response.Content).data;
+            //var logs = baseValue.notification_logs.Where(x => x.from == _context.users.Last().id);
+            //var Ids = logs.Select(s => s.notification_id).Distinct().ToList();
+            //var notifications = baseValue.notifications.Where(x => Ids.Contains(x.id));
 
-            var logs = baseValue.notification_logs.Where(x => x.from == _context.users.Last().id);
-            var Ids = logs.Select(s => s.notification_id).Distinct().ToList();
-            var notifications = baseValue.notifications.Where(x => Ids.Contains(x.id));
+            //foreach(var us in notifications)
+            //{
+            //    foreach(var log in logs.Where(x => x.notification_id == us.id))
+            //    {
+            //        var emailClient = new RestClient($"http://localhost:6000/notification/logs?target={log.target}");
+            //        emailClient.Timeout = -1;
+            //        var emailRequest = new RestRequest(Method.GET);
+            //        emailRequest.AddHeader("Content-Type", "application/json");
+            //        emailRequest.AddParameter("application/json", "", ParameterType.RequestBody);
+            //        var emailResponse = client.Execute(emailRequest);
+            //        var email_destination = JsonConvert.DeserializeObject<List<string>>(emailResponse.Content);
 
-            foreach(var us in notifications)
-            {
-                foreach(var log in logs.Where(x => x.notification_id == us.id))
-                {
-                    var emailClient = new RestClient($"http://localhost:6000/notification/logs?target={log.target}");
-                    emailClient.Timeout = -1;
-                    var emailRequest = new RestRequest(Method.GET);
-                    emailRequest.AddHeader("Content-Type", "application/json");
-                    emailRequest.AddParameter("application/json", "", ParameterType.RequestBody);
-                    var emailResponse = client.Execute(emailRequest);
-                    var email_destination = JsonConvert.DeserializeObject<List<string>>(emailResponse.Content);
-
-                    EmailSender.SendEmail(us.title, us.message, userData.email, userData.name, email_destination);
-                }
-            }
+            //        EmailSender.SendEmail(us.title, us.message, userData.email, userData.name, email_destination);
+            //    }
+            //}
 
 
             return new BaseDto<UserOutput>
@@ -75,7 +66,7 @@ namespace User.Application.UseCases.Users //.Command.Create
                     username = s.username,
                     email = s.email,
                     address = s.address
-                }).Last()
+                }).ToList().Last()
             };
         }
     }

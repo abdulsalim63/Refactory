@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/Notification.csproj": {}
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/Notification/Notification/Notification.csproj": {}
   },
   "projects": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/Notification.csproj": {
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/Notification/Notification/Notification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/Notification.csproj",
+        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/Notification/Notification/Notification.csproj",
         "projectName": "Notification",
-        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/Notification.csproj",
+        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/Notification/Notification/Notification.csproj",
         "packagesPath": "/Users/gigaming/.nuget/packages/",
-        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/Notification/Notification/obj/",
+        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/Notification/Notification/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/gigaming/.config/NuGet/NuGet.Config"
+          "/Users/gigaming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -47,6 +47,26 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "hangfire": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "hangfire.aspnetcore": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "hangfire.core": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "hangfire.postgresql": {
+              "target": "Package",
+              "version": "[1.6.4.1, )"
+            },
+            "mailkit": {
+              "target": "Package",
+              "version": "[2.5.2, )"
+            },
             "microsoft.aspnetcore.authentication.jwtbearer": {
               "target": "Package",
               "version": "[3.1.2, )"
@@ -64,6 +84,10 @@
             "npgsql.entityframeworkcore.postgresql": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "rabbitmq.client": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             }
           },
           "imports": [

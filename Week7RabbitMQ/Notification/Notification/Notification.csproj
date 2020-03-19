@@ -30,6 +30,11 @@
 
 
   <ItemGroup>
+    <PackageReference Include="hangfire" Version="1.7.9" />
+    <PackageReference Include="hangfire.aspnetcore" Version="1.7.9" />
+    <PackageReference Include="hangfire.core" Version="1.7.9" />
+    <PackageReference Include="hangfire.postgresql" Version="1.6.4.1" />
+    <PackageReference Include="mailkit" Version="2.5.2" />
     <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="microsoft.aspnetcore.authentication.jwtbearer" Version="3.1.2" />
@@ -39,6 +44,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="npgsql.entityframeworkcore.postgresql" Version="3.1.2" />
+    <PackageReference Include="rabbitmq.client" Version="5.1.2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Notification.csproj" />

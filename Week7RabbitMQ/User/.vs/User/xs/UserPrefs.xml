@@ -2,11 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="User/Application/UseCases/Users/Command/Create/CreateCommandHandler.cs">
     <Files>
       <File FileName="User/Startup.cs" Line="37" Column="83" />
-      <File FileName="User/Presenter/Controller/UserController.cs" />
-      <File FileName="User/Application/UseCases/Users/Command/Create/CreateCommand.cs" />
-      <File FileName="User/Application/UseCases/Users/Command/Create/CreateCommandHandler.cs" Line="34" Column="1" />
-      <File FileName="User/appsettings.json" Line="11" Column="31" />
-      <File FileName="User/Dockerfile" />
+      <File FileName="User/Application/UseCases/Users/Command/Create/CreateCommandHandler.cs" Line="55" Column="16" />
+      <File FileName="User/Application/Models/RabbitMQSend.cs" Line="13" Column="32" />
+      <File FileName="User/appsettings.json" Line="11" Column="80" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,6 +21,7 @@
                         <Node name="CreateCommandHandler.cs" selected="True" />
                       </Node>
                     </Node>
+                    <Node name="Models" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -39,7 +38,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.User PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />

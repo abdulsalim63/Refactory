@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using System.Threading.Tasks;
 using User.Application.UseCases.Users;
+using System.Collections.Generic;
+using Microsoft.Extensions.Primitives;
 
 namespace User.Presenter.Controller
 {
@@ -20,7 +23,9 @@ namespace User.Presenter.Controller
         [HttpPost("register")]
         public async Task<IActionResult> Post([FromBody] CreateUserCommand request)
         {
-            return Ok(await _mediator.Send(request));
+            StringValues values;
+            this.Request.Headers.TryGetValue("Authorization", out values);
+            return Ok(await _mediator.Send(new CreateUserCommand() { data = request.data, token = values}));
         }
 
         [HttpGet]

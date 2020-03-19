@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/User/User/User.csproj": {}
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/User/User/User.csproj": {}
   },
   "projects": {
-    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/User/User/User.csproj": {
+    "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/User/User/User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/User/User/User.csproj",
+        "projectUniqueName": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/User/User/User.csproj",
         "projectName": "User",
-        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/User/User/User.csproj",
+        "projectPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/User/User/User.csproj",
         "packagesPath": "/Users/gigaming/.nuget/packages/",
-        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RPI/User/User/obj/",
+        "outputPath": "/Users/gigaming/Downloads/Refactory Image/Training/Refactory Task/Week7RabbitMQ/User/User/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/gigaming/.config/NuGet/NuGet.Config"
+          "/Users/gigaming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -72,6 +72,14 @@
             "npgsql.entityframeworkcore.postgresql": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "rabbitmq": {
+              "target": "Package",
+              "version": "[3.6.2, )"
+            },
+            "rabbitmq.client": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             }
           },
           "imports": [

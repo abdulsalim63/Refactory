@@ -18,6 +18,9 @@ using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Hangfire;
+using Hangfire.PostgreSql;
+using Notification.Application.Models;
 
 namespace Notification
 {
@@ -34,6 +37,9 @@ namespace Notification
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddHangfire(option =>
+                option.UsePostgreSqlStorage(Configuration.GetConnectionString("Hangfire")));
 
             services.AddDbContext<ProjectContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("Postgre")));
 
@@ -63,6 +69,11 @@ namespace Notification
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseHangfireServer();
+            app.UseHangfireDashboard();
+
+            RecurringJob.AddOrUpdate(() => Subscriber.Recieved(), Cron.Hourly);
 
             app.UseRouting();
 
