@@ -1,27 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MailKit.Net.Smtp;
 using MimeKit;
+using Notification.Application.UseCases.Notifications;
 
 namespace Notification.Application.Models
 {
     public class EmailSender
     {
-        public static void SendEmail(string title, string body, string from, string name, List<string> to)
+        public static void SendEmail()
         {
-            foreach (var i in to)
-            {
-                emailHandler(title, body, from, name, i);
-            }
         }
 
-        public static void emailHandler(string title, string body, string from, string name, string to)
+        public static void emailHandler(string title, string body, string address, string name, string to)
         {
             var message = new MimeMessage();
             var bodyBuilder = new BodyBuilder();
 
             message.To.Add(new MailboxAddress(to, to));
-            message.From.Add(new MailboxAddress(name, from));
+            message.From.Add(new MailboxAddress(name, address));
 
             message.Subject = title;
             bodyBuilder.HtmlBody = body;

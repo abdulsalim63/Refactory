@@ -6,11 +6,13 @@ namespace User.Application.Models
 {
     public class Publisher
     {
-        public static void Send(string host, string message)
+        public static void Send(string id, string name, string email)
         {
+            var message = $"{id} {name} {email}";
+
             var connectionFactory = new ConnectionFactory()
             {
-                HostName = host
+                HostName = "localhost"
             };
             using (var connection = connectionFactory.CreateConnection())
             {
@@ -25,7 +27,7 @@ namespace User.Application.Models
 
                     channel.BasicPublish("", "user", properties, body);
 
-                    Console.WriteLine($"Message {message} has sent");
+                    Console.WriteLine($"Message from user {id} : {name} with email {email} has sent");
                 }
             }
         }

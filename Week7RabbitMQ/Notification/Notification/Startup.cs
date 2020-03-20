@@ -74,6 +74,7 @@ namespace Notification
             app.UseHangfireDashboard();
 
             RecurringJob.AddOrUpdate(() => Subscriber.Recieved(), Cron.Hourly);
+            RecurringJob.AddOrUpdate(() => EmailSender.SendEmail(), Cron.Hourly);
 
             app.UseRouting();
 

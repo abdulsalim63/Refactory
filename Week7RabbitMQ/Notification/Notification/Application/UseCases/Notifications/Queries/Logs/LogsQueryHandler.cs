@@ -7,6 +7,8 @@ using Notification.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Threading;
+using Hangfire;
+using Notification.Application.Models;
 
 namespace Notification.Application.UseCases.Notifications //.Queries.Logs
 {
