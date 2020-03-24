@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  paymentservices:
+    image: ${DOCKER_REGISTRY-}paymentservices
+    build:
+      context: .
+      dockerfile: PaymentServices/Dockerfile
