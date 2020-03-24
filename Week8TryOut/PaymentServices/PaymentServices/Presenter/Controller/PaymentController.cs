@@ -24,7 +24,7 @@ namespace PaymentServices.Presenter.Controller
         }
 
         [HttpPost("midtrans/push")]
-        public async Task<IActionResult> PostMidtrans()
+        public IActionResult PostMidtrans()
         {
             return Ok(new { message = "this section isn't finished"});
         }

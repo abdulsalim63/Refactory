@@ -37,7 +37,7 @@ namespace PaymentServices.Application.UseCases.Payments //.Command.Update
 
                 var ordersData = await _context.orders.FindAsync(paymentData.order_id);
 
-                Publisher.Send(ordersData.user_id.ToString());
+                Publisher.Send(ordersData.user_id.ToString(), "push");
 
                 return new BaseDto<Payment_Input>
                 {
